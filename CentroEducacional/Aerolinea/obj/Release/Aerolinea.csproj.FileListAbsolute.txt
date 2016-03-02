@@ -1,0 +1,92 @@
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.csprojResolveAssemblyReference.cache
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmingresoReservacion.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolVuelo.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolAvion.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolLocalizaciones.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarPasajero.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteReservacion.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteVuelos.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmtipoAvion.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmrealizacionPago.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolPasajero.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmseleccionReservacion.resources
+C:\Users\JACC\Documents\Visual Studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.csproj.GenerateResource.Cache
+C:\Users\JACC\documents\visual studio 2013\Projects\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\JACC\documents\visual studio 2013\Projects\Aerolinea\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\JACC\documents\visual studio 2013\Projects\Aerolinea\Aerolinea\bin\Release\MySql.Data.DLL
+C:\Users\JACC\documents\visual studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\JACC\documents\visual studio 2013\Projects\Aerolinea\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.csprojResolveAssemblyReference.cache
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmingresoReservacion.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolVuelo.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolAvion.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolLocalizaciones.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarPasajero.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteReservacion.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteVuelos.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmtipoAvion.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmrealizacionPago.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolPasajero.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmseleccionReservacion.resources
+C:\Users\Pamela\Desktop\ABC\Aerolinea\Aerolinea\obj\Release\Aerolinea.csproj.GenerateResource.Cache
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.csprojResolveAssemblyReference.cache
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmingresoReservacion.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolVuelo.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolAvion.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolLocalizaciones.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarPasajero.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteReservacion.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteVuelos.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmtipoAvion.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmrealizacionPago.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolPasajero.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmseleccionReservacion.resources
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\obj\Release\Aerolinea.csproj.GenerateResource.Cache
+C:\Users\Pamela\Dropbox\Octavo Semestre\Sistemas de Información Gerencial\PROYECTO FINAL AEROLÍNEA SISTEMA\Proyecto Final Gerencial Sistema Aerolínea\Aerolinea\Aerolinea\bin\Release\itextsharp.dll
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.csprojResolveAssemblyReference.cache
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.csproj.GenerateResource.Cache
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\itextsharp.dll

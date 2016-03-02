@@ -1,0 +1,171 @@
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\bin\Release\itextsharp.dll
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\CentroEducacional.csprojResolveAssemblyReference.cache
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Gomez\Downloads\Aerolinea (1)\Aerolinea\Aerolinea\obj\Release\CentroEducacional.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\ConexionODBC.dll
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\Navegador.dll
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\Navegador.pdb
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\WindowsFormsApplication4.frmCarrera.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmFacultad.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSalones.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSedes.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoPago.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoServicio.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmFacultad.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSalones.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSedes.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoPago.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoServicio.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csproj.GenerateResource.Cache
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\ConexionODBC.dll
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Navegador.dll
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCarrera.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPensum.resources
+C:\Users\DylanIsaac\Desktop\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPersona.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\ConexionODBC.dll
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Navegador.dll
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csprojResolveAssemblyReference.cache
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCarrera.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmFacultad.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPensum.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPersona.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSalones.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSedes.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoPago.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoServicio.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Gomez\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCarrera.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmFacultad.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPensum.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPersona.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSalones.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSedes.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoPago.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\ConexionODBC.dll
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Navegador.dll
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmAsignacionRoles.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCreacionPaquetes.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmInscripcionAlumno.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.Form1.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalCarrera.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalFacultad.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalSedes.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalTipoPago.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCobroParqueo.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmMantenimientoNota.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPonderacionNota.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalCobroParqueo.resources
+C:\Users\Josue\Desktop\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmAsignacionparqueo.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe.config
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.exe
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.pdb
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Aerolinea.pdb
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\ConexionODBC.dll
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\bin\Release\Navegador.dll
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.Form1.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmAsignacionparqueo.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmAsignacionRoles.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmbitacora.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCarrera.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCobroMensualidad.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCobroParqueo.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmcontrolUsuarios.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCreacionPaquetes.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmFacultad.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmInscripcionAlumno.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmLogin.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmMantenimientoNota.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmMenu.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmmodificarUsuario.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPensum.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPersona.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPonderacionNota.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalCarrera.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalCobroMensualidad.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalCobroParqueo.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalFacultad.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalSedes.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalTipoPago.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmreporteUsuarios.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSalones.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmSedes.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoPago.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.Properties.Resources.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\CentroEducacional.csproj.GenerateResource.Cache
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmIngresoNotas.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalIngresoNotas.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalCursos.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalPensum.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalPersona.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalSalones.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalTipoServicio.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmCurso.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmTipoServicio.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalUsuarios.resources
+C:\Users\Josue\Desktop\Proyecto Educacional\Catalogos con seguridad\Catalogos con seguridad\CentroEducacional\Aerolinea\obj\Release\Aerolinea.peueba.resources

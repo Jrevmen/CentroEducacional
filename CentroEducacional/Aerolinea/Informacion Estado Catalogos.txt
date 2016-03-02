@@ -1,0 +1,15 @@
+Cambiados al nuevo modelo:
+(Pantalla principal y mantenimiento):
+
+	parqueos
+	jornada
+	rol
+	horario
+	seccion
+* Pendiente de arreglar unas funciones y un poco del diseño.
+
+Pendientes:
+
+	laboratorios
+	puestos
+	empleados
