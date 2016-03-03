@@ -1,6 +1,6 @@
 ﻿namespace Aerolinea
 {
-    partial class frmCreacionPaquetes
+    partial class frmCreacionCarnet
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreacionPaquetes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreacionCarnet));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -43,29 +45,37 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmbCarrera = new System.Windows.Forms.ComboBox();
+            this.cmbPersona = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cmbCurso = new System.Windows.Forms.ComboBox();
+            this.cmbJornada = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cmbSalon = new System.Windows.Forms.ComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.cmbLaboratorio = new System.Windows.Forms.ComboBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.cmbHorario = new System.Windows.Forms.ComboBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.cmbSeccion = new System.Windows.Forms.ComboBox();
-            this.lblEmpleado = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.cmbCatedratico = new System.Windows.Forms.ComboBox();
+            this.lblAnio = new System.Windows.Forms.Label();
+            this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.cmbCarrera);
+            this.groupBox2.Location = new System.Drawing.Point(265, 77);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(253, 56);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Carrera a Asignar Carnet";
+            // 
+            // cmbCarrera
+            // 
+            this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Location = new System.Drawing.Point(9, 22);
+            this.cmbCarrera.Name = "cmbCarrera";
+            this.cmbCarrera.Size = new System.Drawing.Size(224, 21);
+            this.cmbCarrera.TabIndex = 12;
+            this.cmbCarrera.DropDown += new System.EventHandler(this.cmbCarrera_DropDown);
+            this.cmbCarrera.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbCarrera_KeyUp);
             // 
             // panel1
             // 
@@ -82,10 +92,10 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(680, 55);
-            this.panel1.TabIndex = 9;
+            this.panel1.TabIndex = 18;
             // 
             // btnIrUltimo
             // 
@@ -202,185 +212,89 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cmbCarrera);
-            this.groupBox1.Location = new System.Drawing.Point(12, 73);
+            this.groupBox1.Controls.Add(this.cmbPersona);
+            this.groupBox1.Location = new System.Drawing.Point(28, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(303, 56);
-            this.groupBox1.TabIndex = 16;
+            this.groupBox1.Size = new System.Drawing.Size(240, 56);
+            this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Carrera a Asignar Horario";
+            this.groupBox1.Text = "Nombre Persona";
             // 
-            // cmbCarrera
+            // cmbPersona
             // 
-            this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Location = new System.Drawing.Point(9, 22);
-            this.cmbCarrera.Name = "cmbCarrera";
-            this.cmbCarrera.Size = new System.Drawing.Size(279, 21);
-            this.cmbCarrera.TabIndex = 12;
-            this.cmbCarrera.DropDown += new System.EventHandler(this.cmbCarrera_DropDown);
-            this.cmbCarrera.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbCarrera_KeyUp);
+            this.cmbPersona.FormattingEnabled = true;
+            this.cmbPersona.Location = new System.Drawing.Point(9, 22);
+            this.cmbPersona.Name = "cmbPersona";
+            this.cmbPersona.Size = new System.Drawing.Size(222, 21);
+            this.cmbPersona.TabIndex = 12;
+            this.cmbPersona.DropDown += new System.EventHandler(this.cmbPersona_DropDown);
+            this.cmbPersona.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbPersona_KeyUp);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.cmbCurso);
-            this.groupBox3.Location = new System.Drawing.Point(574, 73);
+            this.groupBox3.Controls.Add(this.cmbJornada);
+            this.groupBox3.Location = new System.Drawing.Point(28, 139);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(217, 56);
-            this.groupBox3.TabIndex = 18;
+            this.groupBox3.Size = new System.Drawing.Size(240, 56);
+            this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Curso";
+            this.groupBox3.Text = "Jornada";
             // 
-            // cmbCurso
+            // cmbJornada
             // 
-            this.cmbCurso.FormattingEnabled = true;
-            this.cmbCurso.Location = new System.Drawing.Point(6, 22);
-            this.cmbCurso.Name = "cmbCurso";
-            this.cmbCurso.Size = new System.Drawing.Size(195, 21);
-            this.cmbCurso.TabIndex = 12;
-            this.cmbCurso.DropDown += new System.EventHandler(this.cmbCurso_DropDown);
-            this.cmbCurso.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbCurso_KeyUp);
+            this.cmbJornada.FormattingEnabled = true;
+            this.cmbJornada.Location = new System.Drawing.Point(9, 22);
+            this.cmbJornada.Name = "cmbJornada";
+            this.cmbJornada.Size = new System.Drawing.Size(222, 21);
+            this.cmbJornada.TabIndex = 12;
+            this.cmbJornada.DropDown += new System.EventHandler(this.cmbJornada_DropDown);
+            this.cmbJornada.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbJornada_KeyUp);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.cmbSalon);
-            this.groupBox4.Location = new System.Drawing.Point(12, 133);
+            this.groupBox4.Controls.Add(this.lblAnio);
+            this.groupBox4.Location = new System.Drawing.Point(274, 139);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(217, 56);
-            this.groupBox4.TabIndex = 19;
+            this.groupBox4.Size = new System.Drawing.Size(253, 56);
+            this.groupBox4.TabIndex = 18;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Salon";
+            this.groupBox4.Text = "Año";
             // 
-            // cmbSalon
+            // lblAnio
             // 
-            this.cmbSalon.FormattingEnabled = true;
-            this.cmbSalon.Location = new System.Drawing.Point(6, 22);
-            this.cmbSalon.Name = "cmbSalon";
-            this.cmbSalon.Size = new System.Drawing.Size(195, 21);
-            this.cmbSalon.TabIndex = 12;
-            this.cmbSalon.DropDown += new System.EventHandler(this.cmbSalon_DropDown);
-            this.cmbSalon.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbSalon_KeyUp);
+            this.lblAnio.AutoSize = true;
+            this.lblAnio.Location = new System.Drawing.Point(12, 17);
+            this.lblAnio.Name = "lblAnio";
+            this.lblAnio.Size = new System.Drawing.Size(35, 13);
+            this.lblAnio.TabIndex = 0;
+            this.lblAnio.Text = "label1";
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.cmbLaboratorio);
-            this.groupBox5.Location = new System.Drawing.Point(235, 135);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(158, 56);
-            this.groupBox5.TabIndex = 20;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Laboratorio";
-            // 
-            // cmbLaboratorio
-            // 
-            this.cmbLaboratorio.FormattingEnabled = true;
-            this.cmbLaboratorio.Location = new System.Drawing.Point(9, 22);
-            this.cmbLaboratorio.Name = "cmbLaboratorio";
-            this.cmbLaboratorio.Size = new System.Drawing.Size(140, 21);
-            this.cmbLaboratorio.TabIndex = 12;
-            this.cmbLaboratorio.DropDown += new System.EventHandler(this.cmbLaboratorio_DropDown);
-            this.cmbLaboratorio.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbLaboratorio_KeyUp);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.cmbHorario);
-            this.groupBox6.Location = new System.Drawing.Point(406, 133);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(184, 56);
-            this.groupBox6.TabIndex = 20;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Horario";
-            // 
-            // cmbHorario
-            // 
-            this.cmbHorario.FormattingEnabled = true;
-            this.cmbHorario.Location = new System.Drawing.Point(7, 22);
-            this.cmbHorario.Name = "cmbHorario";
-            this.cmbHorario.Size = new System.Drawing.Size(163, 21);
-            this.cmbHorario.TabIndex = 12;
-            this.cmbHorario.DropDown += new System.EventHandler(this.cmbHorario_DropDown);
-            this.cmbHorario.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbHorario_KeyUp);
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.cmbSeccion);
-            this.groupBox7.Location = new System.Drawing.Point(613, 135);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(178, 56);
-            this.groupBox7.TabIndex = 21;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Seccion";
-            // 
-            // cmbSeccion
-            // 
-            this.cmbSeccion.FormattingEnabled = true;
-            this.cmbSeccion.Location = new System.Drawing.Point(7, 22);
-            this.cmbSeccion.Name = "cmbSeccion";
-            this.cmbSeccion.Size = new System.Drawing.Size(152, 21);
-            this.cmbSeccion.TabIndex = 12;
-            this.cmbSeccion.DropDown += new System.EventHandler(this.cmbSeccion_DropDown);
-            this.cmbSeccion.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbSeccion_KeyUp);
-            // 
-            // lblEmpleado
-            // 
-            this.lblEmpleado.AutoSize = true;
-            this.lblEmpleado.Location = new System.Drawing.Point(722, 32);
-            this.lblEmpleado.Name = "lblEmpleado";
-            this.lblEmpleado.Size = new System.Drawing.Size(13, 13);
-            this.lblEmpleado.TabIndex = 22;
-            this.lblEmpleado.Text = "2";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.cmbCatedratico);
-            this.groupBox8.Location = new System.Drawing.Point(321, 73);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(247, 56);
-            this.groupBox8.TabIndex = 23;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Catedratico";
-            // 
-            // cmbCatedratico
-            // 
-            this.cmbCatedratico.FormattingEnabled = true;
-            this.cmbCatedratico.Location = new System.Drawing.Point(7, 22);
-            this.cmbCatedratico.Name = "cmbCatedratico";
-            this.cmbCatedratico.Size = new System.Drawing.Size(224, 21);
-            this.cmbCatedratico.TabIndex = 12;
-            this.cmbCatedratico.DropDown += new System.EventHandler(this.cmbCatedratico_DropDown);
-            this.cmbCatedratico.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbCatedratico_KeyUp);
-            // 
-            // frmCreacionPaquetes
+            // frmCreacionCarnet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 253);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.lblEmpleado);
-            this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
+            this.ClientSize = new System.Drawing.Size(741, 341);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.MaximizeBox = false;
-            this.Name = "frmCreacionPaquetes";
-            this.Text = "Creacion de Horarios";
+            this.Controls.Add(this.groupBox2);
+            this.Name = "frmCreacionCarnet";
+            this.Text = "Asignacion de Carnet";
+            this.groupBox2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cmbCarrera;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
@@ -395,19 +309,10 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cmbCarrera;
+        private System.Windows.Forms.ComboBox cmbPersona;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox cmbCurso;
+        private System.Windows.Forms.ComboBox cmbJornada;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox cmbSalon;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ComboBox cmbLaboratorio;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox cmbHorario;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.ComboBox cmbSeccion;
-        private System.Windows.Forms.Label lblEmpleado;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.ComboBox cmbCatedratico;
+        private System.Windows.Forms.Label lblAnio;
     }
 }

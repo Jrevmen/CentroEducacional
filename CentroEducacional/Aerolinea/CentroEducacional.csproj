@@ -122,6 +122,12 @@
       <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="claseUsuario.cs" />
+    <Compile Include="frmCreacionCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreacionCarnet.Designer.cs">
+      <DependentUpon>frmCreacionCarnet.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCreacionPaquetes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,12 @@
     <Compile Include="frmPonderacionNota.designer.cs">
       <DependentUpon>frmPonderacionNota.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipalCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalCarnet.Designer.cs">
+      <DependentUpon>frmPrincipalCarnet.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipalCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +241,18 @@
     </Compile>
     <Compile Include="frmPrincipalIngresoNotas.Designer.cs">
       <DependentUpon>frmPrincipalIngresoNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalInscripcion.Designer.cs">
+      <DependentUpon>frmPrincipalInscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalPaquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalPaquetes.Designer.cs">
+      <DependentUpon>frmPrincipalPaquetes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipalPensum.cs">
       <SubType>Form</SubType>
@@ -334,6 +358,9 @@
     <EmbeddedResource Include="frmcontrolUsuarios.resx">
       <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCreacionCarnet.resx">
+      <DependentUpon>frmCreacionCarnet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreacionPaquetes.resx">
       <DependentUpon>frmCreacionPaquetes.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,6 +397,9 @@
     <EmbeddedResource Include="frmPonderacionNota.resx">
       <DependentUpon>frmPonderacionNota.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalCarnet.resx">
+      <DependentUpon>frmPrincipalCarnet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalCarrera.resx">
       <DependentUpon>frmPrincipalCarrera.cs</DependentUpon>
     </EmbeddedResource>
@@ -387,6 +417,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalIngresoNotas.resx">
       <DependentUpon>frmPrincipalIngresoNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalInscripcion.resx">
+      <DependentUpon>frmPrincipalInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalPaquetes.resx">
+      <DependentUpon>frmPrincipalPaquetes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalPensum.resx">
       <DependentUpon>frmPrincipalPensum.cs</DependentUpon>
