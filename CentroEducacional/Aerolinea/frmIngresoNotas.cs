@@ -31,7 +31,7 @@ namespace Aerolinea
         {
             System.Console.WriteLine("EL CODIGO QUE TENGO ES////// " + sCPaquete);
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("asignacioncurso", "SELECT carnet.codigoCarnet AS CodCarnet, encabezado_incripcion.codigoInscripcion AS CodInscripcion, persona.nombre AS NOMBRE FROM asignacioncurso, paquete, encabezado_incripcion, carnet, persona WHERE persona.codigopersona=carnet.codigopersona AND encabezado_incripcion.codigoCarnet=carnet.codigoCarnet AND asignacioncurso.codigoInscripcion=encabezado_incripcion.codigoInscripcion AND paquete.ccodigo_paquete=asignacioncurso.ccodigo_paquete AND paquete.ccodigo_paquete='"+sCPaquete+"'", "consulta", grdTipoNota);
+            cnegocio.funconsultarRegistros("asignacioncurso", "SELECT carnet.codigoCarnet AS CodCarnet, encabezado_incripcion.codigoInscripcion AS CodInscripcion, persona.nombre AS NOMBRE FROM asignacioncurso, paquete, encabezado_incripcion, carnet, persona WHERE persona.codigopersona=carnet.codigopersona AND encabezado_incripcion.codigoCarnet=carnet.codigoCarnet AND asignacioncurso.codigoInscripcion=encabezado_incripcion.codigoInscripcion AND paquete.ccodigo_paquete=asignacioncurso.ccodigo_paquete AND paquete.ccodigo_paquete='"+sCPaquete+"'", "consulta", grdTipoNota);            
         }
 
         private void funLlenarCombo() 
