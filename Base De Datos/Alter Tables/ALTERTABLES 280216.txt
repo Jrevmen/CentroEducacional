@@ -1,0 +1,8 @@
+-- ENCARGADO:Josué Zeceña
+-- DESCRIPCION: Agregar campo "fecha" en tablas "nota" y "tipo_nota"
+-- FECHA: 28/02/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE nota ADD fecha CHAR(20) NOT NULL;
+
+ALTER TABLE tipo_nota ADD fecha CHAR(20) NOT NULL;

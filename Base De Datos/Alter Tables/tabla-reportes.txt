@@ -1,0 +1,10 @@
+CREATE TABLE `REPORTE` (
+  `cod_reporte` int(11) NOT NULL AUTO_INCREMENT,
+  `modulo_reporte` varchar(45) NOT NULL,
+  `nom_reporte` varchar(100) NOT NULL,
+  `directorio` varchar(100) NOT NULL,
+  `usuario` varchar(45) NOT NULL,
+  `fecha` date DEFAULT NULL,
+  `id_form` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`cod_reporte`)
+)

@@ -1,0 +1,35 @@
+-- ------------------Cambios si no corriste el alter table que subi ayer--
+-- ---SE renombraron campos codigo_rol a codigoPuesto---
+
+-- ---En tabla empleado----------
+
+ALTER TABLE empleado DROP FOREIGN KEY `RefPUESTO12`;
+ALTER TABLE empleado DROP INDEX `RefPUESTO12`;
+alter table empleado change codigo_rol codigoPuesto int;
+
+-- ---En tabla puesto------------
+-- ---SE renombraron campos codigo_rol a codigoPuesto---
+
+alter table puesto change codigo_rol codigoPuesto int auto_increment;
+
+ALTER TABLE empleado ADD CONSTRAINT relacionempleadopuesto
+FOREIGN KEY (codigoPuesto)
+REFERENCES puesto(codigoPuesto);
+
+
+
+
+-- -------en caso ejecutaste el query de ayer--------------
+
+-- ----------------nueva-----------------------------------
+-- ----para los que corrieron el alter table de ayer-------
+
+ALTER TABLE empleado DROP FOREIGN KEY `relacionempleadopuesto`;
+
+ALTER TABLE empleado DROP INDEX relacionempleadopuesto;
+
+ALTER TABLE puesto CHANGE codigoPuesto codigoPuesto INT auto_increment;
+
+ALTER TABLE empleado ADD CONSTRAINT relacionempleadopuesto
+FOREIGN KEY (codigoPuesto)
+REFERENCES puesto(codigoPuesto);

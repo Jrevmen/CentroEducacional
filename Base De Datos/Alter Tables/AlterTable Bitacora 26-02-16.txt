@@ -1,0 +1,7 @@
+-- ALTER TABLES PARA LA TABLA DE BITACORA
+-- RESPONSABLE: JOSUE REVOLORIO
+-- FECHA: 23/02/2016
+-- ---------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE bitacora ADD ip VARCHAR(20) NOT NULL;
+ALTER TABLE bitacora ADD hora time NOT NULL;

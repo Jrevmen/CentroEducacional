@@ -1,0 +1,10 @@
+C:\Users\Josue\documents\visual studio 2013\Projects\ConexionODBC\ConexionODBC\bin\Debug\ConexionODBC.dll
+C:\Users\Josue\documents\visual studio 2013\Projects\ConexionODBC\ConexionODBC\bin\Debug\ConexionODBC.pdb
+C:\Users\Josue\documents\visual studio 2013\Projects\ConexionODBC\ConexionODBC\obj\Debug\ConexionODBC.csprojResolveAssemblyReference.cache
+C:\Users\Josue\documents\visual studio 2013\Projects\ConexionODBC\ConexionODBC\obj\Debug\ConexionODBC.dll
+C:\Users\Josue\documents\visual studio 2013\Projects\ConexionODBC\ConexionODBC\obj\Debug\ConexionODBC.pdb
+C:\Users\Josue\Desktop\ConexionODBC - Copy\ConexionODBC\bin\Debug\ConexionODBC.dll
+C:\Users\Josue\Desktop\ConexionODBC - Copy\ConexionODBC\bin\Debug\ConexionODBC.pdb
+C:\Users\Josue\Desktop\ConexionODBC - Copy\ConexionODBC\obj\Debug\ConexionODBC.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Desktop\ConexionODBC - Copy\ConexionODBC\obj\Debug\ConexionODBC.dll
+C:\Users\Josue\Desktop\ConexionODBC - Copy\ConexionODBC\obj\Debug\ConexionODBC.pdb

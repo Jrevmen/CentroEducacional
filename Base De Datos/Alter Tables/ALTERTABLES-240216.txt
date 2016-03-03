@@ -1,0 +1,170 @@
+-- ENCARGADO: JOSUE REVOLORIO
+-- DESCRIPCION: CREACION DE TABLA PERMISO PARA MANEJO DE PERMISOS BASICOS DE INSERT MODIFICAR Y ELIMINAR
+-- FECHA: 24/02/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+CREATE TABLE permiso(
+
+    codigo_permisos    INT         auto_increment NOT NULL,
+
+    nombre      CHAR(35),
+
+    validacion           boolean,
+
+    estado           CHAR(25),
+    
+    codigo_privilegios INT,
+
+    PRIMARY KEY (codigo_permisos)
+
+)
+
+;
+
+ALTER TABLE permiso ADD CONSTRAINT relacionapermiso
+
+    FOREIGN KEY (codigo_privilegios)
+
+    REFERENCES privilegios(codigo_privilegios)
+
+;
+
+ALTER TABLE usuario ADD estado VARCHAR(20) NOT NULL;
+
+-- ENCARGADO: KEVIN CAJBON
+-- DESCRIPCION: CORRECCIONO DE ERRORES EN RELACIONES DE PENSUM
+-- FECHA: 24/02/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE asignacion_pensum DROP FOREIGN KEY `RefCREACION_PENSUM80`;  
+ALTER TABLE asignacion_pensum DROP `codigo_creacion_pensum`;
+
+ALTER TABLE asignacion_pensum ADD codigo_pensum INT NOT NULL;
+
+ALTER TABLE asignacion_pensum ADD CONSTRAINT relacionasignacion_apensum
+
+    FOREIGN KEY (codigo_pensum)
+
+    REFERENCES pensum(codigo_pensum)
+
+;
+
+
+-- ENCARGADO: MANUEL CHUQUIEJ
+-- DESCRIPCION: CORRECCION DE ENCABEZADO DE INSCRIPCION PARA LA CORRECTA CREACION DE CARNETS
+-- FECHA: 24/02/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+
+
+ALTER TABLE encabezado_incripcion DROP FOREIGN KEY `RefJORNADA3`;  
+ALTER TABLE encabezado_incripcion DROP `codigoJornada`;
+
+ALTER TABLE encabezado_incripcion DROP FOREIGN KEY `RefCARRERA5`;  
+ALTER TABLE encabezado_incripcion DROP `codigoCarrera`;
+
+ALTER TABLE encabezado_incripcion ADD estado VARCHAR(20) NOT NULL; 
+
+ALTER TABLE carnet DROP `jornada`;
+
+ALTER TABLE carnet ADD codigoJornada INT NOT NULL;
+
+ALTER TABLE carnet ADD codigoCarrera INT NOT NULL;
+
+ALTER TABLE carnet ADD CONSTRAINT relacionjornada 
+    FOREIGN KEY (codigoJornada)
+    REFERENCES JORNADA(codigoJornada)
+;
+
+ALTER TABLE carnet ADD CONSTRAINT relacioncarrera 
+    FOREIGN KEY (codigoCarrera)
+    REFERENCES CARRERA(codigoCarrera)
+;
+
+
+-- ENCARGADO: DYLAN CORADO
+-- DESCRIPCION: SE AGREGO UN CAMPO BOOLEAN PARA ELIMINACION
+-- FECHA: 24/02/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE asignacioncurso ADD condicion bool;
+ALTER TABLE asignacion_parqueo ADD condicion bool;
+ALTER TABLE asignacion_pensum ADD condicion bool;
+ALTER TABLE bitacora ADD condicion bool;
+ALTER TABLE carnet ADD condicion bool;
+ALTER TABLE carrera ADD condicion bool;
+ALTER TABLE contrato ADD condicion bool;
+ALTER TABLE creacion_pensum ADD condicion bool;
+ALTER TABLE curso ADD condicion bool;
+ALTER TABLE cursos_aprobados ADD condicion bool;
+ALTER TABLE direccion ADD condicion bool;
+ALTER TABLE email ADD condicion bool;
+ALTER TABLE empleado ADD condicion bool;
+ALTER TABLE encabezado_incripcion ADD condicion bool;
+ALTER TABLE encabezado_nota ADD condicion bool;
+ALTER TABLE encargado ADD condicion bool;
+ALTER TABLE equivalencia ADD condicion bool;
+ALTER TABLE facultad ADD condicion bool;
+ALTER TABLE horario ADD condicion bool;
+ALTER TABLE jornada ADD condicion bool;
+ALTER TABLE laboratorio ADD condicion bool;
+ALTER TABLE nota ADD condicion bool;
+ALTER TABLE paquete ADD condicion bool;
+ALTER TABLE parametrizacion ADD condicion bool;
+ALTER TABLE parqueo ADD condicion bool;
+ALTER TABLE pensum ADD condicion bool;
+ALTER TABLE permiso ADD condicion bool;
+ALTER TABLE persona ADD condicion bool;
+ALTER TABLE prerequisito ADD condicion bool;
+ALTER TABLE privilegios ADD condicion bool;
+ALTER TABLE puesto ADD condicion bool;
+ALTER TABLE rol ADD condicion bool;
+ALTER TABLE salon ADD condicion bool;
+ALTER TABLE seccion ADD condicion bool;
+ALTER TABLE sedes ADD condicion bool;
+ALTER TABLE servicio ADD condicion bool;
+ALTER TABLE telefono ADD condicion bool;
+ALTER TABLE tipo_nota ADD condicion bool;
+ALTER TABLE tipo_pago ADD condicion bool;
+ALTER TABLE tipo_servicio ADD condicion bool;
+ALTER TABLE usuario ADD condicion bool;
+
+-- ENCARGADO: Diego Taracena
+-- DESCRIPCION: Cambios de campos opcionales
+-- FECHA: 24/02/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE servicio CHANGE codigo_contrato codigo_contrato INT null;
+ALTER TABLE servicio CHANGE codigoCarnet codigoCarnet INT null;
+
+-- ENCARGADO:Josue Revolorio y Dylan Corado
+-- DESCRIPCION: Cambios en tablas de parqueos, y logica de prerequisitos, curso y pensum
+-- FECHA: 24/02/2016
+-- -----------------------------------------------------------------------------------------------------------------------
+
+ALTER TABLE asignacion_parqueo DROP FOREIGN KEY `RefCARNET25`;  
+ALTER TABLE asignacion_parqueo DROP `codigoCarnet`;
+
+ALTER TABLE asignacion_parqueo ADD codigopersona INT NOT NULL;
+
+ALTER TABLE asignacion_parqueo ADD CONSTRAINT relacionpersona_parqueo 
+    FOREIGN KEY (codigopersona)
+    REFERENCES persona(codigopersona)
+;
+
+ALTER TABLE prerequisito DROP FOREIGN KEY `RefCURSO85`;  
+ALTER TABLE prerequisito DROP `codigo_curso`;
+
+ alter table prerequisito add primary key (codigo_prerequisito);
+
+ALTER TABLE prerequisito CHANGE codigo_prerequisito codigo_prerequisito INT auto_increment;
+ALTER TABLE prerequisito ADD nombre char(50);
+
+
+ALTER TABLE creacion_pensum ADD codigo_prerequisito INT NOT NULL;
+
+ALTER TABLE creacion_pensum ADD CONSTRAINT relacionpensum_creacion
+    FOREIGN KEY (codigo_prerequisito)
+    REFERENCES prerequisito(codigo_prerequisito)
+;
+
+
