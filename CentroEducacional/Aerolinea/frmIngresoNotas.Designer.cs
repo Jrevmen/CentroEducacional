@@ -43,6 +43,7 @@
             this.Fecha = new System.Windows.Forms.Label();
             this.Descripcion = new System.Windows.Forms.Label();
             this.grdTipoNota = new System.Windows.Forms.DataGridView();
+            this.Calificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).BeginInit();
             this.SuspendLayout();
@@ -152,6 +153,7 @@
             // dtpFecha
             // 
             this.dtpFecha.CustomFormat = "yyyy-MM-dd";
+            this.dtpFecha.Enabled = false;
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha.Location = new System.Drawing.Point(334, 97);
             this.dtpFecha.Name = "dtpFecha";
@@ -180,10 +182,17 @@
             // 
             this.grdTipoNota.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdTipoNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdTipoNota.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Calificacion});
             this.grdTipoNota.Location = new System.Drawing.Point(12, 138);
             this.grdTipoNota.Name = "grdTipoNota";
             this.grdTipoNota.Size = new System.Drawing.Size(570, 235);
             this.grdTipoNota.TabIndex = 24;
+            // 
+            // Calificacion
+            // 
+            this.Calificacion.HeaderText = "Calificacion";
+            this.Calificacion.Name = "Calificacion";
             // 
             // frmIngresoNotas
             // 
@@ -221,5 +230,6 @@
         private System.Windows.Forms.Label Fecha;
         private System.Windows.Forms.Label Descripcion;
         private System.Windows.Forms.DataGridView grdTipoNota;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Calificacion;
     }
 }

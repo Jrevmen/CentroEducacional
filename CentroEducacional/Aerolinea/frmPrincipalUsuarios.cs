@@ -21,7 +21,7 @@ namespace Aerolinea
         private void funActualizarGrid()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("usuario", "SELECT usuario.codigo_usuario as Codigo, usuario.nombre_usuario as Username, usuario.password_usuario as Password, rol.tipo as Rol, usuario.estado as Estado, persona.nombre as Nombre, persona.apellido as Apellido from usuario, persona, rol", "consulta", grdUsuarios);
+            cnegocio.funconsultarRegistros("usuario", "SELECT usuario.codigo_usuario as Codigo, usuario.nombre_usuario as Username, usuario.password_usuario as Password, rol.tipo as Rol, usuario.estado as Estado, persona.nombre as Nombre, persona.apellido as Apellido from usuario, persona, rol where usuario.codigo_rol = rol.codigo_rol", "consulta", grdUsuarios);
             
         }
         

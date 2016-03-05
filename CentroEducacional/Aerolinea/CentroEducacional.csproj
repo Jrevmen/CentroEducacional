@@ -51,6 +51,9 @@
     <Reference Include="ConexionODBC">
       <HintPath>bin\Debug\ConexionODBC.dll</HintPath>
     </Reference>
+    <Reference Include="Filtrado">
+      <HintPath>..\..\..\..\..\Desktop\Filtrado.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp">
       <HintPath>.\itextsharp.dll</HintPath>
     </Reference>
@@ -122,6 +125,12 @@
       <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="claseUsuario.cs" />
+    <Compile Include="frmCreacionCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreacionCarnet.Designer.cs">
+      <DependentUpon>frmCreacionCarnet.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCreacionPaquetes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +185,12 @@
     <Compile Include="frmmodificarUsuario.Designer.cs">
       <DependentUpon>frmmodificarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPar.Designer.cs">
+      <DependentUpon>frmPar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPensum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +208,12 @@
     </Compile>
     <Compile Include="frmPonderacionNota.designer.cs">
       <DependentUpon>frmPonderacionNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalCarnet.Designer.cs">
+      <DependentUpon>frmPrincipalCarnet.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipalCarrera.cs">
       <SubType>Form</SubType>
@@ -230,6 +251,24 @@
     <Compile Include="frmPrincipalIngresoNotas.Designer.cs">
       <DependentUpon>frmPrincipalIngresoNotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipalInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalInscripcion.Designer.cs">
+      <DependentUpon>frmPrincipalInscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalPaquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalPaquetes.Designer.cs">
+      <DependentUpon>frmPrincipalPaquetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipalParqueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalParqueo.Designer.cs">
+      <DependentUpon>frmPrincipalParqueo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipalPensum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +281,10 @@
     <Compile Include="frmPrincipalPersona.Designer.cs">
       <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipalPonderacionNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalPonderacionNota.designer.cs" />
     <Compile Include="frmPrincipalSalones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,11 +315,23 @@
     <Compile Include="frmPrincipalUsuarios.designer.cs">
       <DependentUpon>frmPrincipalUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReInscripcionAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReInscripcionAlumno.Designer.cs">
+      <DependentUpon>frmReInscripcionAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmreporteUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmreporteUsuarios.designer.cs">
       <DependentUpon>frmreporteUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRePrincipalInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRePrincipalInscripcion.Designer.cs">
+      <DependentUpon>frmRePrincipalInscripcion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSalones.cs">
       <SubType>Form</SubType>
@@ -334,6 +389,9 @@
     <EmbeddedResource Include="frmcontrolUsuarios.resx">
       <DependentUpon>frmcontrolUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCreacionCarnet.resx">
+      <DependentUpon>frmCreacionCarnet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreacionPaquetes.resx">
       <DependentUpon>frmCreacionPaquetes.cs</DependentUpon>
     </EmbeddedResource>
@@ -361,6 +419,9 @@
     <EmbeddedResource Include="frmmodificarUsuario.resx">
       <DependentUpon>frmmodificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPar.resx">
+      <DependentUpon>frmPar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPensum.resx">
       <DependentUpon>frmPensum.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,6 +430,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPonderacionNota.resx">
       <DependentUpon>frmPonderacionNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalCarnet.resx">
+      <DependentUpon>frmPrincipalCarnet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalCarrera.resx">
       <DependentUpon>frmPrincipalCarrera.cs</DependentUpon>
@@ -388,12 +452,22 @@
     <EmbeddedResource Include="frmPrincipalIngresoNotas.resx">
       <DependentUpon>frmPrincipalIngresoNotas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalInscripcion.resx">
+      <DependentUpon>frmPrincipalInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalPaquetes.resx">
+      <DependentUpon>frmPrincipalPaquetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalParqueo.resx">
+      <DependentUpon>frmPrincipalParqueo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalPensum.resx">
       <DependentUpon>frmPrincipalPensum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalPersona.resx">
       <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalPonderacionNota.resx" />
     <EmbeddedResource Include="frmPrincipalSalones.resx">
       <DependentUpon>frmPrincipalSalones.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,8 +483,14 @@
     <EmbeddedResource Include="frmPrincipalUsuarios.resx">
       <DependentUpon>frmPrincipalUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReInscripcionAlumno.resx">
+      <DependentUpon>frmReInscripcionAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmreporteUsuarios.resx">
       <DependentUpon>frmreporteUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRePrincipalInscripcion.resx">
+      <DependentUpon>frmRePrincipalInscripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSalones.resx">
       <DependentUpon>frmSalones.cs</DependentUpon>
