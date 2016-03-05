@@ -41,19 +41,6 @@
             this.labelPass = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gbPrivilegios = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDesc = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.GridPrivilegios = new System.Windows.Forms.DataGridView();
-            this.rdNuevo = new System.Windows.Forms.RadioButton();
-            this.cmbRolPre = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rdPre = new System.Windows.Forms.RadioButton();
-            this.txtRol = new System.Windows.Forms.TextBox();
-            this.txtGuarda2 = new System.Windows.Forms.TextBox();
-            this.txtXX = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
@@ -62,18 +49,28 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbPrivilegios = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.GridPrivilegios = new System.Windows.Forms.DataGridView();
+            this.rdNuevo = new System.Windows.Forms.RadioButton();
+            this.rdPre = new System.Windows.Forms.RadioButton();
+            this.cmbRolPre = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtRol = new System.Windows.Forms.TextBox();
+            this.txtGuarda2 = new System.Windows.Forms.TextBox();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CheckPrivilegio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreForm = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Insertar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Modificar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Guardar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.txtXX = new System.Windows.Forms.TextBox();
             this.groupBoxDatosUsuario.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbPrivilegios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPrivilegios)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxDatosUsuario
@@ -110,7 +107,7 @@
             this.txtRectificaPassword.PasswordChar = '*';
             this.txtRectificaPassword.Size = new System.Drawing.Size(191, 21);
             this.txtRectificaPassword.TabIndex = 13;
-            this.txtRectificaPassword.TextChanged += new System.EventHandler(this.txtRectificaPassword_TextChanged_1);
+            this.txtRectificaPassword.TextChanged += new System.EventHandler(this.txtRectificaPassword_TextChanged);
             // 
             // label3
             // 
@@ -131,7 +128,7 @@
             this.cbMuestra.Size = new System.Drawing.Size(191, 24);
             this.cbMuestra.TabIndex = 11;
             this.cbMuestra.SelectedIndexChanged += new System.EventHandler(this.cbMuestra_SelectedIndexChanged);
-            this.cbMuestra.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cbMuestra_KeyUp_1);
+            this.cbMuestra.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cbMuestra_KeyUp);
             // 
             // lbPersona
             // 
@@ -204,149 +201,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(456, 58);
             this.panel1.TabIndex = 183;
-            // 
-            // gbPrivilegios
-            // 
-            this.gbPrivilegios.Controls.Add(this.label4);
-            this.gbPrivilegios.Controls.Add(this.txtDesc);
-            this.gbPrivilegios.Controls.Add(this.dataGridView1);
-            this.gbPrivilegios.Controls.Add(this.GridPrivilegios);
-            this.gbPrivilegios.Controls.Add(this.rdNuevo);
-            this.gbPrivilegios.Controls.Add(this.label1);
-            this.gbPrivilegios.Controls.Add(this.txtRol);
-            this.gbPrivilegios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPrivilegios.Location = new System.Drawing.Point(399, 105);
-            this.gbPrivilegios.Name = "gbPrivilegios";
-            this.gbPrivilegios.Size = new System.Drawing.Size(535, 342);
-            this.gbPrivilegios.TabIndex = 184;
-            this.gbPrivilegios.TabStop = false;
-            this.gbPrivilegios.Text = "Asignando Privilegios";
-            this.gbPrivilegios.Enter += new System.EventHandler(this.gbPrivilegios_Enter);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(401, 60);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 15);
-            this.label4.TabIndex = 189;
-            this.label4.Text = "Descripcion";
-            // 
-            // txtDesc
-            // 
-            this.txtDesc.Location = new System.Drawing.Point(338, 35);
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(168, 21);
-            this.txtDesc.TabIndex = 188;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(556, 356);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(10, 10);
-            this.dataGridView1.TabIndex = 187;
-            this.dataGridView1.Visible = false;
-            // 
-            // GridPrivilegios
-            // 
-            this.GridPrivilegios.AllowUserToOrderColumns = true;
-            this.GridPrivilegios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridPrivilegios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nom,
-            this.NombreForm,
-            this.Insertar,
-            this.Modificar,
-            this.Eliminar});
-            this.GridPrivilegios.Location = new System.Drawing.Point(0, 95);
-            this.GridPrivilegios.Name = "GridPrivilegios";
-            this.GridPrivilegios.Size = new System.Drawing.Size(529, 218);
-            this.GridPrivilegios.TabIndex = 185;
-            this.GridPrivilegios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridPrivilegios_CellContentClick);
-            this.GridPrivilegios.ColumnToolTipTextChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.GridPrivilegios_ColumnToolTipTextChanged);
-            this.GridPrivilegios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GridPrivilegios_KeyPress);
-            this.GridPrivilegios.MouseCaptureChanged += new System.EventHandler(this.gbPrivilegios_Enter);
-            // 
-            // rdNuevo
-            // 
-            this.rdNuevo.AutoSize = true;
-            this.rdNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdNuevo.Location = new System.Drawing.Point(31, 37);
-            this.rdNuevo.Name = "rdNuevo";
-            this.rdNuevo.Size = new System.Drawing.Size(91, 19);
-            this.rdNuevo.TabIndex = 186;
-            this.rdNuevo.TabStop = true;
-            this.rdNuevo.Text = "Nuevo Rol";
-            this.rdNuevo.UseVisualStyleBackColor = true;
-            this.rdNuevo.CheckedChanged += new System.EventHandler(this.rdNuevo_CheckedChanged);
-            // 
-            // cmbRolPre
-            // 
-            this.cmbRolPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRolPre.FormattingEnabled = true;
-            this.cmbRolPre.Location = new System.Drawing.Point(165, 42);
-            this.cmbRolPre.Name = "cmbRolPre";
-            this.cmbRolPre.Size = new System.Drawing.Size(191, 24);
-            this.cmbRolPre.TabIndex = 184;
-            this.cmbRolPre.SelectedIndexChanged += new System.EventHandler(this.cmbRolPre_SelectedIndexChanged);
-            this.cmbRolPre.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbRolPre_KeyUp);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Nombre";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // rdPre
-            // 
-            this.rdPre.AutoSize = true;
-            this.rdPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdPre.Location = new System.Drawing.Point(6, 42);
-            this.rdPre.Name = "rdPre";
-            this.rdPre.Size = new System.Drawing.Size(154, 19);
-            this.rdPre.TabIndex = 185;
-            this.rdPre.TabStop = true;
-            this.rdPre.Text = "Rol Predeterminado";
-            this.rdPre.UseVisualStyleBackColor = true;
-            this.rdPre.CheckedChanged += new System.EventHandler(this.rdPre_CheckedChanged);
-            // 
-            // txtRol
-            // 
-            this.txtRol.Location = new System.Drawing.Point(150, 36);
-            this.txtRol.Name = "txtRol";
-            this.txtRol.Size = new System.Drawing.Size(168, 21);
-            this.txtRol.TabIndex = 1;
-            this.txtRol.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtGuarda2
-            // 
-            this.txtGuarda2.Location = new System.Drawing.Point(24, 271);
-            this.txtGuarda2.Name = "txtGuarda2";
-            this.txtGuarda2.Size = new System.Drawing.Size(343, 20);
-            this.txtGuarda2.TabIndex = 185;
-            this.txtGuarda2.Visible = false;
-            this.txtGuarda2.TextChanged += new System.EventHandler(this.txtGuarda2_TextChanged);
-            // 
-            // txtXX
-            // 
-            this.txtXX.Location = new System.Drawing.Point(1115, 36);
-            this.txtXX.Name = "txtXX";
-            this.txtXX.Size = new System.Drawing.Size(10, 20);
-            this.txtXX.TabIndex = 187;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rdPre);
-            this.groupBox1.Controls.Add(this.cmbRolPre);
-            this.groupBox1.Location = new System.Drawing.Point(16, 297);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(362, 150);
-            this.groupBox1.TabIndex = 190;
-            this.groupBox1.TabStop = false;
             // 
             // btnBuscar
             // 
@@ -426,22 +280,139 @@
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // gbPrivilegios
             // 
-            this.button1.Location = new System.Drawing.Point(830, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 191;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            this.gbPrivilegios.Controls.Add(this.label4);
+            this.gbPrivilegios.Controls.Add(this.txtDesc);
+            this.gbPrivilegios.Controls.Add(this.dataGridView1);
+            this.gbPrivilegios.Controls.Add(this.GridPrivilegios);
+            this.gbPrivilegios.Controls.Add(this.rdNuevo);
+            this.gbPrivilegios.Controls.Add(this.cmbRolPre);
+            this.gbPrivilegios.Controls.Add(this.label1);
+            this.gbPrivilegios.Controls.Add(this.rdPre);
+            this.gbPrivilegios.Controls.Add(this.txtRol);
+            this.gbPrivilegios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPrivilegios.Location = new System.Drawing.Point(399, 105);
+            this.gbPrivilegios.Name = "gbPrivilegios";
+            this.gbPrivilegios.Size = new System.Drawing.Size(705, 372);
+            this.gbPrivilegios.TabIndex = 184;
+            this.gbPrivilegios.TabStop = false;
+            this.gbPrivilegios.Text = "Asignando Privilegios";
+            this.gbPrivilegios.Enter += new System.EventHandler(this.gbPrivilegios_Enter);
             // 
-            // nom
+            // dataGridView1
             // 
-            this.nom.HeaderText = "Nombre Formulario";
-            this.nom.Name = "nom";
-            this.nom.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.nom.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(556, 356);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(10, 10);
+            this.dataGridView1.TabIndex = 187;
+            this.dataGridView1.Visible = false;
+            // 
+            // GridPrivilegios
+            // 
+            this.GridPrivilegios.AllowUserToOrderColumns = true;
+            this.GridPrivilegios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridPrivilegios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CheckPrivilegio,
+            this.NombreForm,
+            this.Guardar,
+            this.Editar,
+            this.Eliminar});
+            this.GridPrivilegios.Location = new System.Drawing.Point(101, 95);
+            this.GridPrivilegios.Name = "GridPrivilegios";
+            this.GridPrivilegios.Size = new System.Drawing.Size(535, 278);
+            this.GridPrivilegios.TabIndex = 185;
+            this.GridPrivilegios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridPrivilegios_CellContentClick);
+            this.GridPrivilegios.ColumnToolTipTextChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.GridPrivilegios_ColumnToolTipTextChanged);
+            this.GridPrivilegios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.GridPrivilegios_KeyPress);
+            this.GridPrivilegios.MouseCaptureChanged += new System.EventHandler(this.gbPrivilegios_Enter);
+            // 
+            // rdNuevo
+            // 
+            this.rdNuevo.AutoSize = true;
+            this.rdNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdNuevo.Location = new System.Drawing.Point(280, 20);
+            this.rdNuevo.Name = "rdNuevo";
+            this.rdNuevo.Size = new System.Drawing.Size(91, 19);
+            this.rdNuevo.TabIndex = 186;
+            this.rdNuevo.TabStop = true;
+            this.rdNuevo.Text = "Nuevo Rol";
+            this.rdNuevo.UseVisualStyleBackColor = true;
+            this.rdNuevo.CheckedChanged += new System.EventHandler(this.rdNuevo_CheckedChanged);
+            // 
+            // rdPre
+            // 
+            this.rdPre.AutoSize = true;
+            this.rdPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdPre.Location = new System.Drawing.Point(20, 20);
+            this.rdPre.Name = "rdPre";
+            this.rdPre.Size = new System.Drawing.Size(154, 19);
+            this.rdPre.TabIndex = 185;
+            this.rdPre.TabStop = true;
+            this.rdPre.Text = "Rol Predeterminado";
+            this.rdPre.UseVisualStyleBackColor = true;
+            this.rdPre.CheckedChanged += new System.EventHandler(this.rdPre_CheckedChanged);
+            // 
+            // cmbRolPre
+            // 
+            this.cmbRolPre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRolPre.FormattingEnabled = true;
+            this.cmbRolPre.Location = new System.Drawing.Point(20, 45);
+            this.cmbRolPre.Name = "cmbRolPre";
+            this.cmbRolPre.Size = new System.Drawing.Size(191, 24);
+            this.cmbRolPre.TabIndex = 184;
+            this.cmbRolPre.SelectedIndexChanged += new System.EventHandler(this.cmbRolPre_SelectedIndexChanged);
+            this.cmbRolPre.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbRolPre_KeyUp);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(338, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nombre";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // txtRol
+            // 
+            this.txtRol.Location = new System.Drawing.Point(280, 46);
+            this.txtRol.Name = "txtRol";
+            this.txtRol.Size = new System.Drawing.Size(168, 21);
+            this.txtRol.TabIndex = 1;
+            this.txtRol.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtGuarda2
+            // 
+            this.txtGuarda2.Location = new System.Drawing.Point(24, 271);
+            this.txtGuarda2.Name = "txtGuarda2";
+            this.txtGuarda2.Size = new System.Drawing.Size(343, 20);
+            this.txtGuarda2.TabIndex = 185;
+            this.txtGuarda2.Visible = false;
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Location = new System.Drawing.Point(454, 46);
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(168, 21);
+            this.txtDesc.TabIndex = 188;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(501, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 15);
+            this.label4.TabIndex = 189;
+            this.label4.Text = "Descripcion";
+            // 
+            // CheckPrivilegio
+            // 
+            this.CheckPrivilegio.HeaderText = "Nombre Formulario";
+            this.CheckPrivilegio.Name = "CheckPrivilegio";
+            this.CheckPrivilegio.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.CheckPrivilegio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // NombreForm
             // 
@@ -450,29 +421,34 @@
             this.NombreForm.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.NombreForm.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Insertar
+            // Guardar
             // 
-            this.Insertar.HeaderText = "Insertar";
-            this.Insertar.Name = "Insertar";
+            this.Guardar.HeaderText = "Guardar";
+            this.Guardar.Name = "Guardar";
             // 
-            // Modificar
+            // Editar
             // 
-            this.Modificar.HeaderText = "Modificar";
-            this.Modificar.Name = "Modificar";
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Name = "Editar";
             // 
             // Eliminar
             // 
             this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
             // 
+            // txtXX
+            // 
+            this.txtXX.Location = new System.Drawing.Point(1115, 36);
+            this.txtXX.Name = "txtXX";
+            this.txtXX.Size = new System.Drawing.Size(10, 20);
+            this.txtXX.TabIndex = 187;
+            // 
             // frmcontrolUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 489);
+            this.ClientSize = new System.Drawing.Size(1137, 489);
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtXX);
             this.Controls.Add(this.txtGuarda2);
             this.Controls.Add(this.gbPrivilegios);
@@ -492,8 +468,6 @@
             this.gbPrivilegios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPrivilegios)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -532,14 +506,12 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDesc;
-        private System.Windows.Forms.TextBox txtXX;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CheckPrivilegio;
         private System.Windows.Forms.DataGridViewCheckBoxColumn NombreForm;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Insertar;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Modificar;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Guardar;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Editar;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.TextBox txtXX;
         
 
     }

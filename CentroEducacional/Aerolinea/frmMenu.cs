@@ -182,7 +182,7 @@ namespace Aerolinea
 
         private void reinscripcionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalInscripcion temp = new frmPrincipalInscripcion();
+            frmInscripcionAlumno temp = new frmInscripcionAlumno();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
@@ -191,7 +191,7 @@ namespace Aerolinea
 
         private void creacionDePaquetesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalPaquetes temp = new frmPrincipalPaquetes();
+            frmCreacionPaquetes temp = new frmCreacionPaquetes();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
@@ -223,7 +223,7 @@ namespace Aerolinea
 
         private void distribucionZonaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalPonderacionNota temp = new frmPrincipalPonderacionNota();
+            frmPonderacionNota temp = new frmPonderacionNota();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
@@ -241,7 +241,7 @@ namespace Aerolinea
 
         private void asignacionDeParqueoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalParqueo temp = new frmPrincipalParqueo();
+            frmAsignacionparqueo temp = new frmAsignacionparqueo();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
@@ -260,24 +260,6 @@ namespace Aerolinea
         private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPrincipalCursos temp = new frmPrincipalCursos();
-            temp.WindowState = FormWindowState.Maximized;
-            temp.MdiParent = this;
-            pictureBox1.Visible = false;
-            temp.Show();
-        }
-
-        private void creacionCarnetToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPrincipalCarnet temp = new frmPrincipalCarnet();
-            temp.WindowState = FormWindowState.Maximized;
-            temp.MdiParent = this;
-            pictureBox1.Visible = false;
-            temp.Show();
-        }
-
-        private void reinscripcionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmRePrincipalInscripcion temp = new frmRePrincipalInscripcion();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;

@@ -22,7 +22,7 @@ namespace Aerolinea
         private void funActualizarGrid()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("servicio", "SELECT servicio.codigo_servicio as Codigo, concat(tipo_servicio.codigo_tipo_servicio, '.', tipo_servicio.descripcion) as Transaccion, carnet.codigoCarnet as Carnet, concat(persona.nombre, ' ', persona.apellido) as Nombre, servicio.monto as Monto, servicio.fecha as Fecha, servicio.estado as Estado from servicio, tipo_servicio, persona, carnet WHERE servicio.codigo_tipo_servicio = tipo_servicio.codigo_tipo_servicio and servicio.codigoCarnet = carnet.codigoCarnet and carnet.codigopersona = persona.codigopersona and servicio.condicion = '1' and tipo_servicio.descripcion LIKE 'pago parqueo%'", "consulta", grdCobroParqueo);
+            cnegocio.funconsultarRegistros("servicio", "SELECT servicio.codigo_servicio as Codigo, concat(tipo_servicio.codigo_tipo_servicio, '.', tipo_servicio.descripcion) as Transaccion, carnet.codigoCarnet as Carnet, concat(persona.nombre, ' ', persona.apellido) as Nombre, servicio.monto as Monto, servicio.fecha as Fecha, servicio.estado as Estado from servicio, tipo_servicio, persona, carnet WHERE servicio.codigo_tipo_servicio = tipo_servicio.codigo_tipo_servicio and servicio.codigoCarnet = carnet.codigoCarnet and carnet.codigopersona = persona.codigopersona and servicio.condicion = '1' and tipo_servicio.descripcion LIKE 'inscripcion%'", "consulta", grdCobroParqueo);
         }
 
         private void txtBuscar_KeyUp(object sender, KeyEventArgs e)

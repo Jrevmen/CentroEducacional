@@ -141,11 +141,11 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(724, 16);
+            this.label1.Location = new System.Drawing.Point(695, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 39);
+            this.label1.Size = new System.Drawing.Size(316, 39);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Cobro Inscripcion";
+            this.label1.Text = "Cobro Mensualidad";
             // 
             // txtBuscar
             // 

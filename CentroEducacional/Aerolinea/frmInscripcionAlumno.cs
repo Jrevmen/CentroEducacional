@@ -31,7 +31,7 @@ namespace Aerolinea
 
         //-------------------variables para tomar datos de campos de texto y combobox-----------------
         String tomaCarnet,fecha;
-        String sCod;
+
 
         //-------------------final de variables para tomar datos de campos de texto y combobox--------
         public frmInscripcionAlumno()
@@ -40,28 +40,6 @@ namespace Aerolinea
             btnNuevo.Select();
             bloquearTodos();
             tomarFecha();
-        }
-
-        public frmInscripcionAlumno(string sCodInscripcion, string sCarnet)
-        {
-            InitializeComponent();
-            /*
-            Boolean[] permisos;
-            permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmFacultad");
-            btnNuevo.Enabled = permisos[0];
-            btnEditar.Enabled = permisos[1];
-            btnEliminar.Enabled = permisos[2];
-            */
-            sCod = sCodInscripcion;
-            txtBuscarPersona.Text = sCarnet;
-            bloquearTodos();
-            btnEliminar.Enabled = true;
-            btnCancelar.Enabled = true;
-            btnEditar.Enabled = true;
-            btnNuevo.Enabled = true;
-            llenarGrid();
-
-
         }
 
         #region funciones de validaciones y estados
@@ -184,8 +162,7 @@ namespace Aerolinea
             {
                 tomarFecha();
                 string est = "ACTIVO";
-                int condicion = 1;
-                _comando = new OdbcCommand(String.Format("insert into encabezado_incripcion(fecha,codigoCarnet,estado,condicion) values ('" + fecha + "','" + paramcarnet + "','" + est + "','"+condicion+"')"), ConexionODBC.Conexion.ObtenerConexion());
+                _comando = new OdbcCommand(String.Format("insert into encabezado_incripcion(fecha,codigoCarnet,estado) values ('" + fecha + "','" + paramcarnet + "','" + est + "')"), ConexionODBC.Conexion.ObtenerConexion());
                 _comando.ExecuteNonQuery();
                 MessageBox.Show("Alumno Correcatamente Inscrito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 limpiar();
@@ -229,8 +206,6 @@ namespace Aerolinea
                         //MessageBox.Show("Se procede a Inscribir al alumno", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         tomarDatos();
                         funPreparacionCodigos(tomaCarnet);
-                        string usu = claseUsuario.varibaleUsuario;
-                        claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "INSERTAR", "encabezado_incripcion");
 
                     }
                 }
@@ -247,48 +222,6 @@ namespace Aerolinea
         {
             limpiar();
             bloquearTodos();
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("¿Decea Eliminar la Inscripcion del Alumno?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                string elimina = "NOACTIVO";
-                int condicion = 1;
-                _comando = new OdbcCommand(String.Format("UPDATE encabezado_incripcion set estado='"+elimina+"' WHERE codigoCarnet='"+txtBuscarPersona.Text+"'"), ConexionODBC.Conexion.ObtenerConexion());
-                _comando.ExecuteNonQuery();
-                //-----------utilizacion de bitacora----------------
-                string usu = claseUsuario.varibaleUsuario;
-                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "ELIMINAR", "encabezado_incripcion");
-                limpiar();
-                bloquearTodos();
-                
-            }
-            else {
-                limpiar();
-                bloquearTodos();
-            }
-
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("¿Decea Reinscribir al Alumno?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                string Activar = "ACTIVO";
-                //int condicion = 1;
-                _comando = new OdbcCommand(String.Format("UPDATE encabezado_incripcion set estado='" + Activar + "' WHERE codigoCarnet='" + txtBuscarPersona.Text + "'"), ConexionODBC.Conexion.ObtenerConexion());
-                _comando.ExecuteNonQuery();
-                string usu = claseUsuario.varibaleUsuario;
-                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "MODIFICACION", "encabezado_incripcion");
-                limpiar();
-                bloquearTodos();
-            }
-            else
-            {
-                limpiar();
-                bloquearTodos();
-            }
         }
 
     }
