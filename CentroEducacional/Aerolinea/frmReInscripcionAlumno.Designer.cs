@@ -1,6 +1,6 @@
 ﻿namespace Aerolinea
 {
-    partial class frmInscripcionAlumno
+    partial class frmReInscripcionAlumno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInscripcionAlumno));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReInscripcionAlumno));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnIrUltimo = new System.Windows.Forms.Button();
-            this.btnSiguiente = new System.Windows.Forms.Button();
-            this.btnAnterior = new System.Windows.Forms.Button();
-            this.btnIrPrimero = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
@@ -56,10 +52,6 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnIrUltimo);
-            this.panel1.Controls.Add(this.btnSiguiente);
-            this.panel1.Controls.Add(this.btnAnterior);
-            this.panel1.Controls.Add(this.btnIrPrimero);
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.btnImprimir);
             this.panel1.Controls.Add(this.btnRefrescar);
@@ -68,46 +60,11 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(135, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 55);
+            this.panel1.Size = new System.Drawing.Size(465, 55);
             this.panel1.TabIndex = 8;
-            // 
-            // btnIrUltimo
-            // 
-            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
-            this.btnIrUltimo.Location = new System.Drawing.Point(609, 4);
-            this.btnIrUltimo.Name = "btnIrUltimo";
-            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
-            this.btnIrUltimo.TabIndex = 16;
-            this.btnIrUltimo.UseVisualStyleBackColor = true;
-            // 
-            // btnSiguiente
-            // 
-            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.Location = new System.Drawing.Point(555, 4);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
-            this.btnSiguiente.TabIndex = 15;
-            this.btnSiguiente.UseVisualStyleBackColor = true;
-            // 
-            // btnAnterior
-            // 
-            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
-            this.btnAnterior.Location = new System.Drawing.Point(501, 4);
-            this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
-            this.btnAnterior.TabIndex = 14;
-            this.btnAnterior.UseVisualStyleBackColor = true;
-            // 
-            // btnIrPrimero
-            // 
-            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
-            this.btnIrPrimero.Location = new System.Drawing.Point(447, 4);
-            this.btnIrPrimero.Name = "btnIrPrimero";
-            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
-            this.btnIrPrimero.TabIndex = 13;
-            this.btnIrPrimero.UseVisualStyleBackColor = true;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnBuscar
             // 
@@ -117,6 +74,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(48, 42);
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnImprimir
             // 
@@ -158,6 +116,7 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.Location = new System.Drawing.Point(123, 4);
             this.btnEliminar.Name = "btnEliminar";
@@ -168,6 +127,7 @@
             // 
             // btnEditar
             // 
+            this.btnEditar.Enabled = false;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.Location = new System.Drawing.Point(69, 4);
             this.btnEditar.Name = "btnEditar";
@@ -204,6 +164,7 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Busqueda Alumno";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label1
             // 
@@ -213,11 +174,12 @@
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Carnet";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // grdLLenarAlumno
             // 
             this.grdLLenarAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdLLenarAlumno.Location = new System.Drawing.Point(15, 30);
+            this.grdLLenarAlumno.Location = new System.Drawing.Point(8, 42);
             this.grdLLenarAlumno.Name = "grdLLenarAlumno";
             this.grdLLenarAlumno.Size = new System.Drawing.Size(572, 178);
             this.grdLLenarAlumno.TabIndex = 13;
@@ -231,8 +193,9 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion Estudiante";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // frmInscripcionAlumno
+            // frmReInscripcionAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -240,8 +203,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "frmInscripcionAlumno";
+            this.Name = "frmReInscripcionAlumno";
             this.Text = "frmInscripcionAlumno";
+            this.Load += new System.EventHandler(this.frmInscripcionAlumno_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -254,23 +218,19 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnIrUltimo;
-        private System.Windows.Forms.Button btnSiguiente;
-        private System.Windows.Forms.Button btnAnterior;
-        private System.Windows.Forms.Button btnIrPrimero;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.TextBox txtBuscarPersona;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView grdLLenarAlumno;
         private System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.Button btnEliminar;
+        public System.Windows.Forms.Button btnEditar;
 
     }
 }

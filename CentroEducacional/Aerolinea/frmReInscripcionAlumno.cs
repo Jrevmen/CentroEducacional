@@ -11,17 +11,11 @@ using System.Data.Odbc;
 using ConexionODBC;
 using Navegador;
 
-/*
- * Programador: Manuel Alejandro Chuquiej Buch.
- * Carnet: 0901-12-9129.
- * Curso: Ingenieria de Software.
- * Carrera: Ingenieria en Sistemas.
- * Asingado Por: Josue Revolorio.
- */
+
 
 namespace Aerolinea
 {
-    public partial class frmInscripcionAlumno : Form
+    public partial class frmReInscripcionAlumno : Form
     {
         //-----------variables para conexiones odbc---------------------------------------------------
 
@@ -34,7 +28,7 @@ namespace Aerolinea
         String sCod;
 
         //-------------------final de variables para tomar datos de campos de texto y combobox--------
-        public frmInscripcionAlumno()
+        public frmReInscripcionAlumno()
         {
             InitializeComponent();
             btnNuevo.Select();
@@ -42,7 +36,7 @@ namespace Aerolinea
             tomarFecha();
         }
 
-        public frmInscripcionAlumno(string sCodInscripcion, string sCarnet)
+        public frmReInscripcionAlumno(string sCodInscripcion, string sCarnet)
         {
             InitializeComponent();
             /*
@@ -82,36 +76,36 @@ namespace Aerolinea
 
         public void bloquearTodos()
         {
-            btnAnterior.Enabled = false;
+           // btnAnterior.Enabled = false;
             btnBuscar.Enabled = false;
             btnCancelar.Enabled = false;
             btnEditar.Enabled = false;
             btnEliminar.Enabled = false;
             btnGuardar.Enabled = false;
             btnImprimir.Enabled = false;
-            btnIrPrimero.Enabled = false;
-            btnIrUltimo.Enabled = false;
+            //btnIrPrimero.Enabled = false;
+            //btnIrUltimo.Enabled = false;
             btnNuevo.Enabled = true; //boton principal de la funcion
             btnRefrescar.Enabled = false;
-            btnSiguiente.Enabled = false;
+            //btnSiguiente.Enabled = false;
             txtBuscarPersona.Enabled = false;
 
         }
 
         public void habilitarConNuevo()
         {
-            btnAnterior.Enabled = true;
+            //btnAnterior.Enabled = true;
             btnBuscar.Enabled = false;
             btnCancelar.Enabled = true;
             btnEditar.Enabled = false;
             btnEliminar.Enabled = false;
             btnGuardar.Enabled = true;
             btnImprimir.Enabled = true;
-            btnIrPrimero.Enabled = true;
-            btnIrUltimo.Enabled = true;
+            //btnIrPrimero.Enabled = true;
+            //btnIrUltimo.Enabled = true;
             btnNuevo.Enabled = false; //boton principal de la funcion
             btnRefrescar.Enabled = false;
-            btnSiguiente.Enabled = true;
+            //btnSiguiente.Enabled = true;
             txtBuscarPersona.Enabled = true;
         }
 
@@ -229,8 +223,6 @@ namespace Aerolinea
                         //MessageBox.Show("Se procede a Inscribir al alumno", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         tomarDatos();
                         funPreparacionCodigos(tomaCarnet);
-                        string usu = claseUsuario.varibaleUsuario;
-                        claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "INSERTAR", "encabezado_incripcion");
 
                     }
                 }
@@ -257,12 +249,8 @@ namespace Aerolinea
                 int condicion = 1;
                 _comando = new OdbcCommand(String.Format("UPDATE encabezado_incripcion set estado='"+elimina+"' WHERE codigoCarnet='"+txtBuscarPersona.Text+"'"), ConexionODBC.Conexion.ObtenerConexion());
                 _comando.ExecuteNonQuery();
-                //-----------utilizacion de bitacora----------------
-                string usu = claseUsuario.varibaleUsuario;
-                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "ELIMINAR", "encabezado_incripcion");
                 limpiar();
                 bloquearTodos();
-                
             }
             else {
                 limpiar();
@@ -279,8 +267,6 @@ namespace Aerolinea
                 //int condicion = 1;
                 _comando = new OdbcCommand(String.Format("UPDATE encabezado_incripcion set estado='" + Activar + "' WHERE codigoCarnet='" + txtBuscarPersona.Text + "'"), ConexionODBC.Conexion.ObtenerConexion());
                 _comando.ExecuteNonQuery();
-                string usu = claseUsuario.varibaleUsuario;
-                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "MODIFICACION", "encabezado_incripcion");
                 limpiar();
                 bloquearTodos();
             }
@@ -289,6 +275,36 @@ namespace Aerolinea
                 limpiar();
                 bloquearTodos();
             }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmInscripcionAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
     }

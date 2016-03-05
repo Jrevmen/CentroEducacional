@@ -21,7 +21,7 @@ namespace Aerolinea
         private void funllenarGridBitacora()
         {
             claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "CONSULTA", "BITACORA");
-            string squery = "SELECT bitacora.accion, bitacora.tabla, bitacora.fecha, usuario.nombre_usuario, bitacora.ip, bitacora.hora from BITACORA, USUARIO WHERE usuario.codigo_usuario = bitacora.codigo_usuario";
+            string squery = "SELECT *  from vistabitacora";
             OdbcCommand cmdc = new OdbcCommand(squery, ConexionODBC.Conexion.ObtenerConexion());
             DataTable dtDatos = new DataTable();
             OdbcDataAdapter mdaDatos = new OdbcDataAdapter(squery, ConexionODBC.Conexion.ObtenerConexion());

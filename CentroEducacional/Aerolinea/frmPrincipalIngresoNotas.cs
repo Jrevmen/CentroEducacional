@@ -26,7 +26,11 @@ namespace Aerolinea
         {
             System.Console.WriteLine("EL CODIGO QUE TENGO ES////// " +sCodigoUsuario);
             clasnegocio cnegocio = new clasnegocio();
+<<<<<<< HEAD
             cnegocio.funconsultarRegistros("paquete", "SELECT paquete.ccodigo_paquete AS Paquete, carrera.nombre AS Carrera, curso.nombre AS Curso, horario.rangoHora AS Horario, salon.nombre_salon AS Salon, seccion.nombre AS Seccion FROM usuario, empleado, paquete, puesto, curso, horario, carrera, salon, seccion WHERE paquete.codigo_seccion=seccion.codigo_seccion AND paquete.codigo_salon=salon.codigo_salon AND paquete.codigoCarrera=carrera.codigoCarrera AND paquete.codigoHorario=horario.codigoHorario AND paquete.codigo_curso=curso.codigo_curso AND empleado.codigo_empleado=paquete.codigo_empleado AND puesto.codigoPuesto=empleado.codigoPuesto AND puesto.nombre='catedratico' AND usuario.codigopersona=empleado.codigopersona AND puesto.codigoPuesto=empleado.codigoPuesto AND usuario.nombre_usuario='" + sCodigoUsuario + "'", "consulta", grdCursos);
+=======
+            cnegocio.funconsultarRegistros("paquete", "SELECT paquete.ccodigo_paquete AS Paquete, carrera.nombre AS Carrera, curso.nombre AS Curso, horario.rangoHora AS Horario, salon.nombre_salon AS Salon, seccion.nombre AS Seccion FROM usuario, empleado, paquete, puesto, curso, horario, carrera, salon, seccion WHERE paquete.codigo_seccion=seccion.codigo_seccion AND paquete.codigo_salon=salon.codigo_salon AND paquete.codigoCarrera=carrera.codigoCarrera AND paquete.codigoHorario=horario.codigoHorario AND paquete.codigo_curso=curso.codigo_curso AND empleado.codigo_empleado=paquete.codigo_empleado AND puesto.codigoPuesto=empleado.codigoPuesto AND puesto.nombre='CATEDRATICO' AND usuario.codigopersona=empleado.codigopersona AND puesto.codigoPuesto=empleado.codigoPuesto AND usuario.nombre_usuario='" + sCodigoUsuario + "'", "consulta", grdCursos);
+>>>>>>> a985cad4ab7322a97c80b6dedb47330c56863232
         }
 
         private void txtBuscar_KeyUp(object sender, KeyEventArgs e)
