@@ -1,6 +1,6 @@
 ﻿namespace Aerolinea
 {
-    partial class frmIngresoNotas
+    partial class frmReInscripcionAlumno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIngresoNotas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReInscripcionAlumno));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
@@ -38,13 +38,15 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.cmbDescripcion = new System.Windows.Forms.ComboBox();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.Fecha = new System.Windows.Forms.Label();
-            this.Descripcion = new System.Windows.Forms.Label();
-            this.grdTipoNota = new System.Windows.Forms.DataGridView();
+            this.txtBuscarPersona = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.grdLLenarAlumno = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdLLenarAlumno)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,10 +60,11 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(68, 12);
+            this.panel1.Location = new System.Drawing.Point(135, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(466, 55);
-            this.panel1.TabIndex = 6;
+            this.panel1.Size = new System.Drawing.Size(465, 55);
+            this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnBuscar
             // 
@@ -71,6 +74,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(48, 42);
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnImprimir
             // 
@@ -98,6 +102,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(48, 42);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -107,24 +112,29 @@
             this.btnGuardar.Size = new System.Drawing.Size(48, 42);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.Location = new System.Drawing.Point(123, 4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(48, 42);
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
+            this.btnEditar.Enabled = false;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.Location = new System.Drawing.Point(69, 4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(48, 42);
             this.btnEditar.TabIndex = 6;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -134,74 +144,74 @@
             this.btnNuevo.Size = new System.Drawing.Size(48, 42);
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // cmbDescripcion
+            // txtBuscarPersona
             // 
-            this.cmbDescripcion.Enabled = false;
-            this.cmbDescripcion.FormattingEnabled = true;
-            this.cmbDescripcion.Items.AddRange(new object[] {
-            "1.Parcial",
-            "2.Actividades",
-            "3.Proyecto",
-            "4.Final"});
-            this.cmbDescripcion.Location = new System.Drawing.Point(129, 100);
-            this.cmbDescripcion.Name = "cmbDescripcion";
-            this.cmbDescripcion.Size = new System.Drawing.Size(156, 21);
-            this.cmbDescripcion.TabIndex = 30;
+            this.txtBuscarPersona.Location = new System.Drawing.Point(50, 20);
+            this.txtBuscarPersona.Name = "txtBuscarPersona";
+            this.txtBuscarPersona.Size = new System.Drawing.Size(277, 20);
+            this.txtBuscarPersona.TabIndex = 9;
+            this.txtBuscarPersona.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscarPersona_KeyUp);
             // 
-            // dtpFecha
+            // groupBox1
             // 
-            this.dtpFecha.CustomFormat = "yyyy-MM-dd";
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFecha.Location = new System.Drawing.Point(334, 97);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 28;
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtBuscarPersona);
+            this.groupBox1.Location = new System.Drawing.Point(38, 73);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(351, 56);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Busqueda Alumno";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // Fecha
+            // label1
             // 
-            this.Fecha.AutoSize = true;
-            this.Fecha.Location = new System.Drawing.Point(291, 100);
-            this.Fecha.Name = "Fecha";
-            this.Fecha.Size = new System.Drawing.Size(37, 13);
-            this.Fecha.TabIndex = 27;
-            this.Fecha.Text = "Fecha";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Carnet";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Descripcion
+            // grdLLenarAlumno
             // 
-            this.Descripcion.AutoSize = true;
-            this.Descripcion.Location = new System.Drawing.Point(60, 103);
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.Size = new System.Drawing.Size(63, 13);
-            this.Descripcion.TabIndex = 26;
-            this.Descripcion.Text = "Descripción";
+            this.grdLLenarAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdLLenarAlumno.Location = new System.Drawing.Point(8, 42);
+            this.grdLLenarAlumno.Name = "grdLLenarAlumno";
+            this.grdLLenarAlumno.Size = new System.Drawing.Size(572, 178);
+            this.grdLLenarAlumno.TabIndex = 13;
             // 
-            // grdTipoNota
+            // groupBox2
             // 
-            this.grdTipoNota.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdTipoNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTipoNota.Location = new System.Drawing.Point(12, 138);
-            this.grdTipoNota.Name = "grdTipoNota";
-            this.grdTipoNota.Size = new System.Drawing.Size(570, 235);
-            this.grdTipoNota.TabIndex = 24;
+            this.groupBox2.Controls.Add(this.grdLLenarAlumno);
+            this.groupBox2.Location = new System.Drawing.Point(39, 147);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(607, 226);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Informacion Estudiante";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // frmIngresoNotas
+            // frmReInscripcionAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 385);
-            this.Controls.Add(this.cmbDescripcion);
-            this.Controls.Add(this.dtpFecha);
-            this.Controls.Add(this.Fecha);
-            this.Controls.Add(this.Descripcion);
-            this.Controls.Add(this.grdTipoNota);
+            this.ClientSize = new System.Drawing.Size(711, 385);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "frmIngresoNotas";
-            this.Text = "frmIngresoNotas";
+            this.Name = "frmReInscripcionAlumno";
+            this.Text = "frmInscripcionAlumno";
+            this.Load += new System.EventHandler(this.frmInscripcionAlumno_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdLLenarAlumno)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -213,13 +223,14 @@
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.ComboBox cmbDescripcion;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label Fecha;
-        private System.Windows.Forms.Label Descripcion;
-        private System.Windows.Forms.DataGridView grdTipoNota;
+        private System.Windows.Forms.TextBox txtBuscarPersona;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView grdLLenarAlumno;
+        private System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.Button btnEliminar;
+        public System.Windows.Forms.Button btnEditar;
+
     }
 }

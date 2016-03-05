@@ -64,6 +64,7 @@ namespace Aerolinea
             string sFecha = grdCobroMensualidad.Rows[grdCobroMensualidad.CurrentCell.RowIndex].Cells[5].Value.ToString();
             frmCobroMensualidad temp = new frmCobroMensualidad(sCodServicio, sTransaccion, sCarnet, sNombre, sMonto, sFecha);
             temp.Show();
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

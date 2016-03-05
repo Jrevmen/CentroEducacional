@@ -1,6 +1,6 @@
 ﻿namespace Aerolinea
 {
-    partial class frmPrincipalCobroMensualidad
+    partial class frmPrincipalPaquetes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalCobroMensualidad));
-            this.grdCobroMensualidad = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalPaquetes));
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBuscarHorario = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.grdPaquete = new System.Windows.Forms.DataGridView();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnIrPrimero = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.lblBuscar = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdCobroMensualidad)).BeginInit();
             this.grupoFiltrar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdPaquete)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdCobroMensualidad
-            // 
-            this.grdCobroMensualidad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdCobroMensualidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdCobroMensualidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdCobroMensualidad.Location = new System.Drawing.Point(0, 0);
-            this.grdCobroMensualidad.Name = "grdCobroMensualidad";
-            this.grdCobroMensualidad.ReadOnly = true;
-            this.grdCobroMensualidad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdCobroMensualidad.Size = new System.Drawing.Size(1014, 511);
-            this.grdCobroMensualidad.TabIndex = 2;
-            this.grdCobroMensualidad.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCobroMensualidad_CellContentDoubleClick);
             // 
             // grupoFiltrar
             // 
@@ -66,15 +53,55 @@
             this.grupoFiltrar.Controls.Add(this.btnRefrescar);
             this.grupoFiltrar.Controls.Add(this.btnNuevo);
             this.grupoFiltrar.Controls.Add(this.label1);
-            this.grupoFiltrar.Controls.Add(this.txtBuscar);
+            this.grupoFiltrar.Controls.Add(this.txtBuscarHorario);
             this.grupoFiltrar.Controls.Add(this.lblBuscar);
             this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.grupoFiltrar.Location = new System.Drawing.Point(0, 450);
+            this.grupoFiltrar.Location = new System.Drawing.Point(0, 463);
             this.grupoFiltrar.Name = "grupoFiltrar";
-            this.grupoFiltrar.Size = new System.Drawing.Size(1014, 61);
-            this.grupoFiltrar.TabIndex = 3;
+            this.grupoFiltrar.Size = new System.Drawing.Size(1050, 61);
+            this.grupoFiltrar.TabIndex = 5;
             this.grupoFiltrar.TabStop = false;
             this.grupoFiltrar.Text = "Filtrar";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(647, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(400, 39);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mantenimiento Paquetes";
+            // 
+            // txtBuscarHorario
+            // 
+            this.txtBuscarHorario.Location = new System.Drawing.Point(61, 25);
+            this.txtBuscarHorario.Name = "txtBuscarHorario";
+            this.txtBuscarHorario.Size = new System.Drawing.Size(209, 20);
+            this.txtBuscarHorario.TabIndex = 1;
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Location = new System.Drawing.Point(12, 28);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(47, 13);
+            this.lblBuscar.TabIndex = 0;
+            this.lblBuscar.Text = "Nombre:";
+            // 
+            // grdPaquete
+            // 
+            this.grdPaquete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdPaquete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdPaquete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdPaquete.Location = new System.Drawing.Point(0, 0);
+            this.grdPaquete.Name = "grdPaquete";
+            this.grdPaquete.ReadOnly = true;
+            this.grdPaquete.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdPaquete.Size = new System.Drawing.Size(1050, 524);
+            this.grdPaquete.TabIndex = 4;
+            this.grdPaquete.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPaquete_CellDoubleClick);
             // 
             // btnIrUltimo
             // 
@@ -136,52 +163,25 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(695, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(316, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Cobro Mensualidad";
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(61, 25);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(209, 20);
-            this.txtBuscar.TabIndex = 1;
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(12, 28);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(47, 13);
-            this.lblBuscar.TabIndex = 0;
-            this.lblBuscar.Text = "Nombre:";
-            // 
-            // frmPrincipalCobroMensualidad
+            // frmPrincipalPaquetes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 511);
+            this.ClientSize = new System.Drawing.Size(1050, 524);
             this.Controls.Add(this.grupoFiltrar);
-            this.Controls.Add(this.grdCobroMensualidad);
-            this.Name = "frmPrincipalCobroMensualidad";
-            this.Text = "frmPrincipalCobroMensualidad";
-            ((System.ComponentModel.ISupportInitialize)(this.grdCobroMensualidad)).EndInit();
+            this.Controls.Add(this.grdPaquete);
+            this.MinimizeBox = false;
+            this.Name = "frmPrincipalPaquetes";
+            this.Text = "Mantenimiento Creacion Horarios";
             this.grupoFiltrar.ResumeLayout(false);
             this.grupoFiltrar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdPaquete)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grdCobroMensualidad;
         private System.Windows.Forms.GroupBox grupoFiltrar;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
@@ -190,7 +190,8 @@
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.TextBox txtBuscarHorario;
         private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.DataGridView grdPaquete;
     }
 }

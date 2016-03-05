@@ -1,6 +1,6 @@
 ﻿namespace Aerolinea
 {
-    partial class frmCobroMensualidad
+    partial class frmCreacionCarnet
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCobroMensualidad));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreacionCarnet));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -42,16 +44,38 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtMonto = new System.Windows.Forms.TextBox();
-            this.Monto = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCarnet = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbPersona = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbJornada = new System.Windows.Forms.ComboBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblAnio = new System.Windows.Forms.Label();
+            this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.cmbCarrera);
+            this.groupBox2.Location = new System.Drawing.Point(265, 77);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(253, 56);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Carrera a Asignar Carnet";
+            // 
+            // cmbCarrera
+            // 
+            this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Location = new System.Drawing.Point(9, 22);
+            this.cmbCarrera.Name = "cmbCarrera";
+            this.cmbCarrera.Size = new System.Drawing.Size(224, 21);
+            this.cmbCarrera.TabIndex = 12;
+            this.cmbCarrera.DropDown += new System.EventHandler(this.cmbCarrera_DropDown);
+            this.cmbCarrera.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbCarrera_KeyUp);
             // 
             // panel1
             // 
@@ -68,10 +92,10 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(51, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(680, 55);
-            this.panel1.TabIndex = 7;
+            this.panel1.TabIndex = 18;
             // 
             // btnIrUltimo
             // 
@@ -144,6 +168,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(48, 42);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -153,6 +178,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(48, 42);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
@@ -162,6 +188,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(48, 42);
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -171,6 +198,7 @@
             this.btnEditar.Size = new System.Drawing.Size(48, 42);
             this.btnEditar.TabIndex = 6;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -180,100 +208,93 @@
             this.btnNuevo.Size = new System.Drawing.Size(48, 42);
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // dtpFecha
+            // groupBox1
             // 
-            this.dtpFecha.CustomFormat = "yyyy-MM-dd";
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFecha.Location = new System.Drawing.Point(379, 152);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 23;
+            this.groupBox1.Controls.Add(this.cmbPersona);
+            this.groupBox1.Location = new System.Drawing.Point(28, 77);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(240, 56);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Nombre Persona";
             // 
-            // label3
+            // cmbPersona
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(314, 155);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Fecha";
+            this.cmbPersona.FormattingEnabled = true;
+            this.cmbPersona.Location = new System.Drawing.Point(9, 22);
+            this.cmbPersona.Name = "cmbPersona";
+            this.cmbPersona.Size = new System.Drawing.Size(222, 21);
+            this.cmbPersona.TabIndex = 12;
+            this.cmbPersona.DropDown += new System.EventHandler(this.cmbPersona_DropDown);
+            this.cmbPersona.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbPersona_KeyUp);
             // 
-            // txtMonto
+            // groupBox3
             // 
-            this.txtMonto.Location = new System.Drawing.Point(141, 152);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(154, 20);
-            this.txtMonto.TabIndex = 21;
-            this.txtMonto.Tag = "monto";
+            this.groupBox3.Controls.Add(this.cmbJornada);
+            this.groupBox3.Location = new System.Drawing.Point(28, 139);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(240, 56);
+            this.groupBox3.TabIndex = 19;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Jornada";
             // 
-            // Monto
+            // cmbJornada
             // 
-            this.Monto.AutoSize = true;
-            this.Monto.Location = new System.Drawing.Point(82, 155);
-            this.Monto.Name = "Monto";
-            this.Monto.Size = new System.Drawing.Size(37, 13);
-            this.Monto.TabIndex = 20;
-            this.Monto.Text = "Monto";
+            this.cmbJornada.FormattingEnabled = true;
+            this.cmbJornada.Location = new System.Drawing.Point(9, 22);
+            this.cmbJornada.Name = "cmbJornada";
+            this.cmbJornada.Size = new System.Drawing.Size(222, 21);
+            this.cmbJornada.TabIndex = 12;
+            this.cmbJornada.DropDown += new System.EventHandler(this.cmbJornada_DropDown);
+            this.cmbJornada.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbJornada_KeyUp);
             // 
-            // txtNombre
+            // groupBox4
             // 
-            this.txtNombre.Location = new System.Drawing.Point(379, 103);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(240, 20);
-            this.txtNombre.TabIndex = 19;
+            this.groupBox4.Controls.Add(this.lblAnio);
+            this.groupBox4.Location = new System.Drawing.Point(274, 139);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(253, 56);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Año";
             // 
-            // label2
+            // lblAnio
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(314, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Nombre";
+            this.lblAnio.AutoSize = true;
+            this.lblAnio.Location = new System.Drawing.Point(12, 17);
+            this.lblAnio.Name = "lblAnio";
+            this.lblAnio.Size = new System.Drawing.Size(35, 13);
+            this.lblAnio.TabIndex = 0;
+            this.lblAnio.Text = "label1";
             // 
-            // txtCarnet
-            // 
-            this.txtCarnet.Location = new System.Drawing.Point(141, 103);
-            this.txtCarnet.Name = "txtCarnet";
-            this.txtCarnet.Size = new System.Drawing.Size(154, 20);
-            this.txtCarnet.TabIndex = 17;
-            this.txtCarnet.Tag = "codigoCarnet";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(82, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Carnet";
-            // 
-            // frmCobroMensualidad
+            // frmCreacionCarnet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 216);
-            this.Controls.Add(this.dtpFecha);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtMonto);
-            this.Controls.Add(this.Monto);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtCarnet);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(741, 341);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "frmCobroMensualidad";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCobroMensualidad";
+            this.Controls.Add(this.groupBox2);
+            this.Name = "frmCreacionCarnet";
+            this.Text = "Asignacion de Carnet";
+            this.groupBox2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cmbCarrera;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
@@ -287,13 +308,11 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtMonto;
-        private System.Windows.Forms.Label Monto;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCarnet;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cmbPersona;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox cmbJornada;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label lblAnio;
     }
 }
