@@ -611,6 +611,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1457296853_checked_checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1457297125_stock_form-checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unchecked.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

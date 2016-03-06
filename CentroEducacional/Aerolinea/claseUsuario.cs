@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Data.Odbc;
 using ConexionODBC;
 using System.Net;
+using System.Threading;
 
 namespace Aerolinea
 {
@@ -15,7 +16,18 @@ namespace Aerolinea
         public static string varibaleUsuario;
         public static OdbcCommand _comando;
         public static OdbcDataReader _reader;
-
+        public static void timeCursor()
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            try
+            {
+                Thread.Sleep(5000);  // wait for a while
+            }
+            finally
+            {
+                Cursor.Current = Cursors.Default;
+            }
+        }
         public static Boolean Autentificar(String txtUsuario, String txtContra)
         {
             Boolean Encontre = false;
@@ -25,21 +37,6 @@ namespace Aerolinea
                 Encontre = true;
             return Encontre;
         }
-
-        /*public static String user(String txtUsuario, String txtContra)
-        {
-            String total = "";
-            string codigo = "";
-            _comando = new OdbcCommand(String.Format("select codigo_usuario from USUARIO where nombre_usuario = '{0}'", txtUsuario), ConexionODBC.Conexion.ObtenerConexion());
-            _reader = _comando.ExecuteReader();
-            if (_reader.Read())
-                codigo = _reader.GetString(0);
-            _comando = new OdbcCommand(String.Format("select tipo from ROL where codigo_rol = (select codigo_rol from USUARIO where codigo_usuario = {0})", codigo), ConexionODBC.Conexion.ObtenerConexion());
-            _reader = _comando.ExecuteReader();
-            if(_reader.Read())
-                total = _reader.GetString(0);
-            return total;
-        }*/
 
         public static void funobtenerBitacora(String txtUsuario, String Accion, String table)
         {
@@ -86,6 +83,10 @@ namespace Aerolinea
                 permiso = _reader.GetString(0);
             return permiso;
         }
+
+
+       
+        
 
         public static Boolean[] PermisosBotones(String txtUsuario, String formulario)
         {
