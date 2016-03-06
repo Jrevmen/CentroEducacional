@@ -16,7 +16,7 @@ namespace Aerolinea
         public frmMenu()
         {
             InitializeComponent();
-            /*if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmPersona") == "no") { this.alumnosToolStripMenuItem.Enabled = false; }
+            if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmPersona") == "no") { this.alumnosToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmEmpleado") == "no") { this.empleadosToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmFamilia") == "no") { this.familiaresToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmPuestos") == "no") { this.puestosToolStripMenuItem.Enabled = false; }
@@ -57,7 +57,6 @@ namespace Aerolinea
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmPagosPendientes") == "no") { this.boletaDePagosPendientesToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmSolvencias") == "no") { this.solvenciasToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmReporteCatalogos") == "no") { this.reportesDeCatalogosToolStripMenuItem.Enabled = false; }
-            if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmAsignacionRol") == "no") { this.asignacionDeRolesToolStripMenuItem.Enabled = false; }*/
         }
 
         private void cERRARSESSIONToolStripMenuItem_Click(object sender, EventArgs e)
