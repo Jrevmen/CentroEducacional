@@ -1,0 +1,2 @@
+-- -------DIEGO
+ALTER TABLE tipo_servicio ADD carnet VARCHAR(40) NULL;
