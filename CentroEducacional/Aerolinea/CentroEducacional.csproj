@@ -45,7 +45,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ConexionODBC">
@@ -242,6 +242,12 @@
     <Compile Include="frmPrincipalPersona.Designer.cs">
       <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipalPonderacionNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalPonderacionNota.designer.cs">
+      <DependentUpon>frmPrincipalPonderacionNota.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipalSalones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalPersona.resx">
       <DependentUpon>frmPrincipalPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalPonderacionNota.resx">
+      <DependentUpon>frmPrincipalPonderacionNota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalSalones.resx">
       <DependentUpon>frmPrincipalSalones.cs</DependentUpon>
