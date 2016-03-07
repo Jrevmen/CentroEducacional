@@ -26,6 +26,7 @@ INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `con
 INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `condicion`) VALUES ('frmCreacionPensum', 'si', 'ACTIVO', '1', '1');
 INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `condicion`) VALUES ('frmCreacionPaquete', 'si', 'ACTIVO', '1', '1');
 INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `condicion`) VALUES ('frmNotas', 'si', 'ACTIVO', '1', '1');
+INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `condicion`) VALUES ('frmZona', 'si', 'ACTIVO', '1', '1');
 INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `condicion`) VALUES ('frmCobroParqueo', 'si', 'ACTIVO', '1', '1');
 INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `condicion`) VALUES ('frmMensualidad', 'si', 'ACTIVO', '1', '1');
 INSERT INTO `privilegios` (`formulario`, `permiso`, `estado`, `codigo_rol`, `condicion`) VALUES ('frmCobroInscrip', 'si', 'ACTIVO', '1', '1');
