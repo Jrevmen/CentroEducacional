@@ -222,7 +222,7 @@ namespace Aerolinea
 
         private void distribucionZonaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPrincipalPonderacionNota temp = new frmPrincipalPonderacionNota();
+            frmPonderacionNota temp = new frmPonderacionNota();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;

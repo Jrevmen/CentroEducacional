@@ -47,7 +47,7 @@ namespace Aerolinea
             if (_reader.Read())
                 codigo = _reader.GetString(0);
 
-            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, ip, codigo_usuario) VALUES('{0}','{1}',CURDATE(), DATE_FORMAT(CURTIME(), '%h:%i:%s'), '{2}','{3}')", Accion, table, ip, codigo), ConexionODBC.Conexion.ObtenerConexion());
+            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, ip, codigo_usuario) VALUES('{0}','{1}',CURDATE(),DATE_FORMAT(CURTIME(), '%h:%i:%s'), '{2}','{3}')", Accion, table, ip, codigo), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
         }
 
