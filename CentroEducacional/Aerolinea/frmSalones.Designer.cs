@@ -47,12 +47,21 @@
             this.txtSede = new System.Windows.Forms.TextBox();
             this.cmbSede = new System.Windows.Forms.ComboBox();
             this.txtCondicion = new System.Windows.Forms.TextBox();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.btnIrUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnIrPrimero = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnIrUltimo);
+            this.panel1.Controls.Add(this.btnSiguiente);
+            this.panel1.Controls.Add(this.btnAnterior);
+            this.panel1.Controls.Add(this.btnIrPrimero);
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.btnImprimir);
             this.panel1.Controls.Add(this.btnRefrescar);
@@ -63,7 +72,7 @@
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Location = new System.Drawing.Point(31, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(472, 55);
+            this.panel1.Size = new System.Drawing.Size(677, 55);
             this.panel1.TabIndex = 6;
             // 
             // btnBuscar
@@ -148,7 +157,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(155, 102);
+            this.lblNombre.Location = new System.Drawing.Point(236, 104);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 7;
@@ -157,7 +166,7 @@
             // lblCupo
             // 
             this.lblCupo.AutoSize = true;
-            this.lblCupo.Location = new System.Drawing.Point(157, 139);
+            this.lblCupo.Location = new System.Drawing.Point(238, 141);
             this.lblCupo.Name = "lblCupo";
             this.lblCupo.Size = new System.Drawing.Size(35, 13);
             this.lblCupo.TabIndex = 8;
@@ -166,7 +175,7 @@
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(209, 97);
+            this.txtNombre.Location = new System.Drawing.Point(290, 99);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(183, 20);
             this.txtNombre.TabIndex = 9;
@@ -175,7 +184,7 @@
             // txtCupo
             // 
             this.txtCupo.Enabled = false;
-            this.txtCupo.Location = new System.Drawing.Point(209, 134);
+            this.txtCupo.Location = new System.Drawing.Point(290, 136);
             this.txtCupo.Name = "txtCupo";
             this.txtCupo.Size = new System.Drawing.Size(183, 20);
             this.txtCupo.TabIndex = 10;
@@ -194,7 +203,7 @@
             // lblSede
             // 
             this.lblSede.AutoSize = true;
-            this.lblSede.Location = new System.Drawing.Point(157, 181);
+            this.lblSede.Location = new System.Drawing.Point(238, 183);
             this.lblSede.Name = "lblSede";
             this.lblSede.Size = new System.Drawing.Size(35, 13);
             this.lblSede.TabIndex = 15;
@@ -214,7 +223,7 @@
             this.cmbSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSede.Enabled = false;
             this.cmbSede.FormattingEnabled = true;
-            this.cmbSede.Location = new System.Drawing.Point(209, 174);
+            this.cmbSede.Location = new System.Drawing.Point(290, 176);
             this.cmbSede.Name = "cmbSede";
             this.cmbSede.Size = new System.Drawing.Size(183, 21);
             this.cmbSede.TabIndex = 18;
@@ -229,11 +238,58 @@
             this.txtCondicion.Text = "1";
             this.txtCondicion.Visible = false;
             // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Image = ((System.Drawing.Image)(resources.GetObject("btnFiltrar.Image")));
+            this.btnFiltrar.Location = new System.Drawing.Point(479, 176);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(28, 24);
+            this.btnFiltrar.TabIndex = 27;
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // btnIrUltimo
+            // 
+            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.btnIrUltimo.Location = new System.Drawing.Point(607, 4);
+            this.btnIrUltimo.Name = "btnIrUltimo";
+            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
+            this.btnIrUltimo.TabIndex = 26;
+            this.btnIrUltimo.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
+            this.btnSiguiente.Location = new System.Drawing.Point(553, 4);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
+            this.btnSiguiente.TabIndex = 25;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
+            this.btnAnterior.Location = new System.Drawing.Point(499, 4);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
+            this.btnAnterior.TabIndex = 24;
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
+            // btnIrPrimero
+            // 
+            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
+            this.btnIrPrimero.Location = new System.Drawing.Point(445, 4);
+            this.btnIrPrimero.Name = "btnIrPrimero";
+            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
+            this.btnIrPrimero.TabIndex = 23;
+            this.btnIrPrimero.UseVisualStyleBackColor = true;
+            // 
             // frmSalones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 223);
+            this.ClientSize = new System.Drawing.Size(720, 229);
+            this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.txtCondicion);
             this.Controls.Add(this.cmbSede);
             this.Controls.Add(this.txtSede);
@@ -274,5 +330,10 @@
         private System.Windows.Forms.TextBox txtSede;
         private System.Windows.Forms.ComboBox cmbSede;
         private System.Windows.Forms.TextBox txtCondicion;
+        private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.Button btnIrUltimo;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnIrPrimero;
     }
 }
