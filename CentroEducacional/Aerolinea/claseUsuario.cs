@@ -105,13 +105,11 @@ namespace Aerolinea
             _reader = _comando.ExecuteReader();
             if(_reader.Read())
                 privilegio = _reader.GetString(0);
-            MessageBox.Show("Privilego: "+privilegio);
             _comando = new OdbcCommand(String.Format("select validacion from PERMISO where codigo_privilegios = '{0}'", privilegio), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             while (_reader.Read())
             {
                 permisos[i] = _reader.GetBoolean(0);
-                MessageBox.Show(i + " " + permisos[i]);
                 i++;
             }
             return permisos;

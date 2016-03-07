@@ -198,3 +198,4 @@ C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrin
 C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalTipoServicio.resources
 C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalUsuarios.resources
 C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.peueba.resources
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\Filtrado.dll
