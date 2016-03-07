@@ -21,7 +21,7 @@ namespace Aerolinea
         private void funActualizarGrid()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("usuario", "SELECT usuario.codigo_usuario as Codigo, usuario.nombre_usuario as Username, usuario.password_usuario as Password, rol.tipo as Rol, usuario.estado as Estado, persona.nombre as Nombre, persona.apellido as Apellido from usuario, persona, rol", "consulta", grdUsuarios);
+            cnegocio.funconsultarRegistros("usuario", "SELECT usuario.codigo_usuario as Codigo, usuario.nombre_usuario as Username, usuario.password_usuario as Password, rol.tipo as Rol, usuario.estado as Estado, persona.nombre as Nombre, persona.apellido as Apellido from usuario, persona, rol where usuario.codigo_rol = rol.codigo_rol", "consulta", grdUsuarios);
             
         }
         
@@ -29,20 +29,31 @@ namespace Aerolinea
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            frmcontrolUsuarios user = new frmcontrolUsuarios();
-            user.Show();
+
+
+             frmcontrolUsuarios temp2 = new frmcontrolUsuarios();
+             temp2.WindowState = FormWindowState.Normal;
+            
+            
+            temp2.Show();
         }
+        
+        
 
         private void frmPrincipalUsuarios_Load(object sender, EventArgs e)
         {
-
+            claseUsuario.timeCursor();
         }
 
         private void grdFacultad_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string codUsuario = grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[0].Value.ToString();
-            string susuario = grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[1].Value.ToString();
-            frmFacultad temp = new frmFacultad(codUsuario, susuario);
+            string usuario = grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            string password = grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[1].Value.ToString();
+            string rol = grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            string estado = grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[3].Value.ToString();
+            string nombre= grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[4].Value.ToString();
+            string apellido= grdUsuarios.Rows[grdUsuarios.CurrentCell.RowIndex].Cells[5].Value.ToString();
+            frmcontrolUsuarios temp = new frmcontrolUsuarios(usuario,password,rol,estado,nombre,apellido);
             temp.Show();
         }
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
