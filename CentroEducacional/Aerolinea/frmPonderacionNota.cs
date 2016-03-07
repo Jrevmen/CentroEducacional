@@ -17,7 +17,7 @@ namespace Aerolinea
     {
         public static OdbcCommand _comando;
         public static OdbcDataReader _reader;
-        string sCod;
+        string sCodForanea, sCodPrimaria;
         string estado = "";
 
         public frmPonderacionNota()
@@ -29,11 +29,11 @@ namespace Aerolinea
         {
             InitializeComponent();
 
-            sCod = sCodPaquete;
+            sCodForanea = sCodPaquete;
             
 
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("tipo_nota", "SELECT codig_tipo_nota as No, Descripcion, Valor, Fecha FROM tipo_nota as t1 WHERE t1.ccodigo_paquete = '" + sCod + "'AND t1.estado='ACTIVO' AND t1.condicion = '1' ", "consulta", grdTipoNota);            
+            cnegocio.funconsultarRegistros("tipo_nota", "SELECT codig_tipo_nota as No, Descripcion, Valor, Fecha FROM tipo_nota as t1 WHERE t1.ccodigo_paquete = '" + sCodForanea + "'AND t1.estado='ACTIVO' AND t1.condicion = '1' ", "consulta", grdTipoNota);            
 
         }
 
@@ -70,8 +70,8 @@ namespace Aerolinea
             btnBuscar.Enabled = false;
             btnImprimir.Enabled = false;
             btnNuevo.Enabled = true;
-            btnEditar.Enabled = true;
-            btnEliminar.Enabled = true;
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
             btnIrPrimero.Enabled = true;
             btnIrUltimo.Enabled = true;
             btnSiguiente.Enabled = true;
@@ -86,18 +86,39 @@ namespace Aerolinea
         public void funActualizarGrid()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("tipo_nota", "SELECT codig_tipo_nota as No, Descripcion, Valor, Fecha FROM tipo_nota as t1 WHERE t1.ccodigo_paquete = '" + sCod + "'AND t1.estado='ACTIVO' AND t1.condicion = '1' ", "consulta", grdTipoNota);
-            
+            cnegocio.funconsultarRegistros("tipo_nota", "SELECT codig_tipo_nota as No, Descripcion, Valor, Fecha FROM tipo_nota as t1 WHERE t1.ccodigo_paquete = '" + sCodForanea + "'AND t1.estado='ACTIVO' AND t1.condicion = '1' ", "consulta", grdTipoNota);
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
+            btnBuscar.Enabled = false;
+            btnImprimir.Enabled = false;
+            btnNuevo.Enabled = true;
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnIrPrimero.Enabled = true;
+            btnIrUltimo.Enabled = true;
+            btnSiguiente.Enabled = true;
+            btnAnterior.Enabled = true;
+
+            cmbDescripcion.Enabled = false;
+            cmbValor.Enabled = false;
+            dtpFecha.Enabled = false;
+
         }
                     
         private void grdTipoNota_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            string sCodig_Tipo_Nota = grdTipoNota.Rows[grdTipoNota.CurrentCell.RowIndex].Cells[0].Value.ToString();
             string sDescripcion = grdTipoNota.Rows[grdTipoNota.CurrentCell.RowIndex].Cells[1].Value.ToString();
             string sValor = grdTipoNota.Rows[grdTipoNota.CurrentCell.RowIndex].Cells[2].Value.ToString();
             string sfecha = grdTipoNota.Rows[grdTipoNota.CurrentCell.RowIndex].Cells[3].Value.ToString();
+            txtCodigTipoNota.Text = sCodig_Tipo_Nota;
+            sCodPrimaria = sCodig_Tipo_Nota;
             cmbDescripcion.Text = sDescripcion;
             cmbValor.Text = sValor;
             dtpFecha.Text = sfecha;
+            btnEliminar.Enabled = true;
+            btnEditar.Enabled = true;
+            btnCancelar.Enabled = true;
         }      
               
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -120,8 +141,7 @@ namespace Aerolinea
 
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
-            this.UseWaitCursor = true;
-            funActualizarGrid();
+            this.UseWaitCursor = true;            
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             btnBuscar.Enabled = false;
@@ -137,6 +157,7 @@ namespace Aerolinea
             cmbDescripcion.Enabled = false;
             cmbValor.Enabled = false;
             dtpFecha.Enabled = false;
+            funActualizarGrid();    
             this.UseWaitCursor = false;
         }
 
@@ -183,8 +204,8 @@ namespace Aerolinea
             btnBuscar.Enabled = false;
             btnImprimir.Enabled = false;
             btnNuevo.Enabled = true;
-            btnEditar.Enabled = true;
-            btnEliminar.Enabled = true;
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
             btnIrPrimero.Enabled = true;
             btnIrUltimo.Enabled = true;
             btnSiguiente.Enabled = true;
@@ -232,35 +253,44 @@ namespace Aerolinea
             txtDescripcion.Text = cmbDescripcion.Text;
             txtValor.Text = cmbValor.Text;
             txtfecha.Text = dtpFecha.Text;
-            txtCcodigo_paquete.Text = sCod;            
+            txtCodigopaquete.Text = sCodForanea;
+            txtCodigTipoNota.Text = sCodPrimaria;
 
             if (estado.Equals("editar"))
             {
-                string sCodigo = "ccodigo_paquete";
-                TextBox[] aDatosEdit = { txtDescripcion, txtValor, txtfecha };
-                cn.EditarObjetos(sTabla, bPermiso, aDatosEdit, sCod, sCodigo);
+                string sCodigo = "codig_tipo_nota";
+                //TextBox[] aDatosEdit = { txtCodigTipoNota, txtDescripcion, txtValor, txtEstado, txtCondicion, txtfecha };
+                //cn.EditarObjetos(sTabla, bPermiso, aDatosEdit, sCodPrimaria, sCodigo);
                 claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Editar", sTabla);
+                try
+                {
+                    _comando = new OdbcCommand(String.Format("UPDATE tipo_nota SET descripcion = '{0}', valor = '{1}', fecha ='{2}' WHERE codig_tipo_nota = {3}", txtDescripcion.Text, txtValor.Text, txtfecha.Text, txtCodigTipoNota.Text), ConexionODBC.Conexion.ObtenerConexion());
+                    _reader = _comando.ExecuteReader();
+
+                }
+                catch
+                {
+                    MessageBox.Show("Error al editar", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
 
 
             }
             else if (estado.Equals("eliminar"))
             {
-                string sCodigo = "ccodigo_paquete";
+                string sCodigo = "codig_tipo_nota";
                 string sCampoEstado = "Condicion";                
-                cn.funeliminarRegistro(sTabla, sCod, sCodigo, sCampoEstado);
+                cn.funeliminarRegistro(sTabla, sCodPrimaria, sCodigo, sCampoEstado);
                 claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Eliminar", sTabla);
-                cmbDescripcion.Text = "";
-                cmbValor.Text = "";
-                dtpFecha.Text = "";
+                
             }
             else if (estado.Equals(""))
             {
-                TextBox[] aDatos = { txtDescripcion, txtValor, txtEstado, txtCcodigo_paquete, txtCondicion, txtfecha };
+                TextBox[] aDatos = { txtDescripcion, txtValor, txtEstado, txtCodigopaquete, txtCondicion, txtfecha };
                 //TextBox[] aDatos = { txtEstado, txtCodPaquete,  txtfecha };
                 //cn.AsignarObjetos(sTabla, bPermiso, aDatos);
                 try
                 { 
-                    _comando = new OdbcCommand(String.Format("INSERT INTO `tipo_nota`(`descripcion`, `valor`, `estado`, `ccodigo_paquete`, `condicion`, `fecha`) VALUES('{0}','{1}','{2}','"+ txtCcodigo_paquete.Text +"','{3}','{4}')", txtDescripcion.Text, txtValor.Text, txtEstado.Text, txtCondicion.Text, txtfecha.Text), ConexionODBC.Conexion.ObtenerConexion());
+                    _comando = new OdbcCommand(String.Format("INSERT INTO `tipo_nota`(`descripcion`, `valor`, `estado`, `ccodigo_paquete`, `condicion`, `fecha`) VALUES('{0}','{1}','{2}','"+ txtCodigopaquete.Text +"','{3}','{4}')", txtDescripcion.Text, txtValor.Text, txtEstado.Text, txtCondicion.Text, txtfecha.Text), ConexionODBC.Conexion.ObtenerConexion());
                     _reader = _comando.ExecuteReader();                  
                                    
                 }
@@ -272,6 +302,9 @@ namespace Aerolinea
                 claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insertar", sTabla);
             }
             funActualizarGrid();
+            cmbDescripcion.Text = "";
+            cmbValor.Text = "";
+            dtpFecha.Text = "";
             this.UseWaitCursor = false;
 
         }

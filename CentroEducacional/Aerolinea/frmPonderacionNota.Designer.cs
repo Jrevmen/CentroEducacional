@@ -54,7 +54,8 @@
             this.txtCondicion = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
-            this.txtCcodigo_paquete = new System.Windows.Forms.TextBox();
+            this.txtCodigopaquete = new System.Windows.Forms.TextBox();
+            this.txtCodigTipoNota = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).BeginInit();
             this.SuspendLayout();
@@ -149,6 +150,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.Location = new System.Drawing.Point(231, 4);
             this.btnCancelar.Name = "btnCancelar";
@@ -159,6 +161,7 @@
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Enabled = false;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.Location = new System.Drawing.Point(177, 4);
             this.btnGuardar.Name = "btnGuardar";
@@ -169,6 +172,7 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.Location = new System.Drawing.Point(123, 4);
             this.btnEliminar.Name = "btnEliminar";
@@ -179,6 +183,7 @@
             // 
             // btnEditar
             // 
+            this.btnEditar.Enabled = false;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.Location = new System.Drawing.Point(69, 4);
             this.btnEditar.Name = "btnEditar";
@@ -320,21 +325,31 @@
             this.txtValor.Tag = "";
             this.txtValor.Visible = false;
             // 
-            // txtCcodigo_paquete
+            // txtCodigopaquete
             // 
-            this.txtCcodigo_paquete.Location = new System.Drawing.Point(495, 131);
-            this.txtCcodigo_paquete.Name = "txtCcodigo_paquete";
-            this.txtCcodigo_paquete.Size = new System.Drawing.Size(48, 20);
-            this.txtCcodigo_paquete.TabIndex = 24;
-            this.txtCcodigo_paquete.Tag = "";
-            this.txtCcodigo_paquete.Visible = false;
+            this.txtCodigopaquete.Location = new System.Drawing.Point(495, 131);
+            this.txtCodigopaquete.Name = "txtCodigopaquete";
+            this.txtCodigopaquete.Size = new System.Drawing.Size(48, 20);
+            this.txtCodigopaquete.TabIndex = 24;
+            this.txtCodigopaquete.Tag = "";
+            this.txtCodigopaquete.Visible = false;
+            // 
+            // txtCodigTipoNota
+            // 
+            this.txtCodigTipoNota.Location = new System.Drawing.Point(441, 131);
+            this.txtCodigTipoNota.Name = "txtCodigTipoNota";
+            this.txtCodigTipoNota.Size = new System.Drawing.Size(48, 20);
+            this.txtCodigTipoNota.TabIndex = 25;
+            this.txtCodigTipoNota.Tag = "";
+            this.txtCodigTipoNota.Visible = false;
             // 
             // frmPonderacionNota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 359);
-            this.Controls.Add(this.txtCcodigo_paquete);
+            this.Controls.Add(this.txtCodigTipoNota);
+            this.Controls.Add(this.txtCodigopaquete);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtCondicion);
@@ -384,7 +399,8 @@
         private System.Windows.Forms.TextBox txtCondicion;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.TextBox txtCcodigo_paquete;
+        private System.Windows.Forms.TextBox txtCodigopaquete;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox txtCodigTipoNota;
     }
 }
