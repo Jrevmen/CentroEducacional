@@ -23,13 +23,13 @@ namespace Aerolinea
         public frmFacultad(string sCodFacultad, string sFacultad)
         {
             InitializeComponent();
-            /*
+            
             Boolean[] permisos;
             permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmFacultad");
             btnNuevo.Enabled = permisos[0];
             btnEditar.Enabled = permisos[1];
             btnEliminar.Enabled = permisos[2];
-            */
+            
             sCod = sCodFacultad;
             txtNombre.Text = sFacultad;
             btnGuardar.Enabled = false;

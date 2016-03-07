@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
+using Filtrado;
 
 namespace Aerolinea
 {
@@ -19,6 +20,11 @@ namespace Aerolinea
         {
             InitializeComponent();
             funSedes();
+            Boolean[] permisos;
+            permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmSalones");
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
         }
 
         public frmSalones(string sCodSalon, string sNombre, string sCupo, string sSede)
@@ -34,6 +40,11 @@ namespace Aerolinea
 
             int index = cmbSede.FindString(sSede);
             cmbSede.SelectedIndex = index;
+            Boolean[] permisos;
+            permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmSalones");
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
         }
        
 
@@ -174,7 +185,6 @@ namespace Aerolinea
             btnEliminar.Enabled = true;
             btnRefrescar.Enabled = true;
             btnBuscar.Enabled = true;
-            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -219,27 +229,19 @@ namespace Aerolinea
 
         private void grdSalones_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
-        private void btnIrPrimero_Click(object sender, EventArgs e)
+        private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void btnAnterior_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnIrUltimo_Click(object sender, EventArgs e)
-        {
-            
+            string sCampoCodigo = "codigo_sede";// nombre del campo del codigo 
+            string sCampoDescripcion = "nombre";// nombre del campo del nombre o descripcion 
+            string query = "Select codigo_sede, nombre from sedes where condicion='1'";// query que devuelve los
+            //datos de codigoFacultad y nombre sin concatenar (Es el mismo query para llenar el combobox)
+            frmFiltrado filtro = new frmFiltrado(query, sCampoCodigo, sCampoDescripcion);
+            filtro.ShowDialog(this);
+            int index = cmbSede.FindString(filtro.funResultado());
+            cmbSede.SelectedIndex = index;//Selecciona el item del combobox 
         }
 
         
