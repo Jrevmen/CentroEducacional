@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIngresoNotas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnIrUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnIrPrimero = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
@@ -44,10 +48,9 @@
             this.Descripcion = new System.Windows.Forms.Label();
             this.grdTipoNota = new System.Windows.Forms.DataGridView();
             this.Calificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnIrUltimo = new System.Windows.Forms.Button();
-            this.btnSiguiente = new System.Windows.Forms.Button();
-            this.btnAnterior = new System.Windows.Forms.Button();
-            this.btnIrPrimero = new System.Windows.Forms.Button();
+            this.txtCondicion = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +74,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(657, 55);
             this.panel1.TabIndex = 6;
+            // 
+            // btnIrUltimo
+            // 
+            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.btnIrUltimo.Location = new System.Drawing.Point(602, 4);
+            this.btnIrUltimo.Name = "btnIrUltimo";
+            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
+            this.btnIrUltimo.TabIndex = 30;
+            this.btnIrUltimo.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
+            this.btnSiguiente.Location = new System.Drawing.Point(548, 4);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
+            this.btnSiguiente.TabIndex = 29;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
+            this.btnAnterior.Location = new System.Drawing.Point(494, 4);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
+            this.btnAnterior.TabIndex = 28;
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
+            // btnIrPrimero
+            // 
+            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
+            this.btnIrPrimero.Location = new System.Drawing.Point(440, 4);
+            this.btnIrPrimero.Name = "btnIrPrimero";
+            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
+            this.btnIrPrimero.TabIndex = 27;
+            this.btnIrPrimero.UseVisualStyleBackColor = true;
             // 
             // btnBuscar
             // 
@@ -101,6 +140,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.Location = new System.Drawing.Point(223, 4);
             this.btnCancelar.Name = "btnCancelar";
@@ -110,15 +150,18 @@
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Enabled = false;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.Location = new System.Drawing.Point(169, 4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(48, 42);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.Location = new System.Drawing.Point(115, 4);
             this.btnEliminar.Name = "btnEliminar";
@@ -128,6 +171,7 @@
             // 
             // btnEditar
             // 
+            this.btnEditar.Enabled = false;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.Location = new System.Drawing.Point(61, 4);
             this.btnEditar.Name = "btnEditar";
@@ -143,6 +187,7 @@
             this.btnNuevo.Size = new System.Drawing.Size(48, 42);
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // cmbDescripcion
             // 
@@ -188,7 +233,8 @@
             // 
             // grdTipoNota
             // 
-            this.grdTipoNota.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdTipoNota.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.grdTipoNota.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdTipoNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdTipoNota.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Calificacion});
@@ -201,48 +247,42 @@
             // 
             this.Calificacion.HeaderText = "Calificacion";
             this.Calificacion.Name = "Calificacion";
+            this.Calificacion.Width = 86;
             // 
-            // btnIrUltimo
+            // txtCondicion
             // 
-            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
-            this.btnIrUltimo.Location = new System.Drawing.Point(602, 4);
-            this.btnIrUltimo.Name = "btnIrUltimo";
-            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
-            this.btnIrUltimo.TabIndex = 30;
-            this.btnIrUltimo.UseVisualStyleBackColor = true;
+            this.txtCondicion.Location = new System.Drawing.Point(331, 112);
+            this.txtCondicion.Name = "txtCondicion";
+            this.txtCondicion.Size = new System.Drawing.Size(72, 20);
+            this.txtCondicion.TabIndex = 31;
+            this.txtCondicion.Text = "1";
+            this.txtCondicion.Visible = false;
             // 
-            // btnSiguiente
+            // txtFecha
             // 
-            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.Location = new System.Drawing.Point(548, 4);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
-            this.btnSiguiente.TabIndex = 29;
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.txtFecha.Location = new System.Drawing.Point(88, 112);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(72, 20);
+            this.txtFecha.TabIndex = 32;
+            this.txtFecha.Visible = false;
             // 
-            // btnAnterior
+            // txtEstado
             // 
-            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
-            this.btnAnterior.Location = new System.Drawing.Point(494, 4);
-            this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
-            this.btnAnterior.TabIndex = 28;
-            this.btnAnterior.UseVisualStyleBackColor = true;
-            // 
-            // btnIrPrimero
-            // 
-            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
-            this.btnIrPrimero.Location = new System.Drawing.Point(440, 4);
-            this.btnIrPrimero.Name = "btnIrPrimero";
-            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
-            this.btnIrPrimero.TabIndex = 27;
-            this.btnIrPrimero.UseVisualStyleBackColor = true;
+            this.txtEstado.Location = new System.Drawing.Point(166, 112);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(72, 20);
+            this.txtEstado.TabIndex = 35;
+            this.txtEstado.Text = "ACTIVO";
+            this.txtEstado.Visible = false;
             // 
             // frmIngresoNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 385);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.txtCondicion);
             this.Controls.Add(this.cmbDescripcion);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.Fecha);
@@ -274,10 +314,13 @@
         private System.Windows.Forms.Label Fecha;
         private System.Windows.Forms.Label Descripcion;
         private System.Windows.Forms.DataGridView grdTipoNota;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Calificacion;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnIrPrimero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Calificacion;
+        private System.Windows.Forms.TextBox txtCondicion;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtEstado;
     }
 }
