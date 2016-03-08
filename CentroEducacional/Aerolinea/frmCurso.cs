@@ -31,6 +31,11 @@ namespace Aerolinea
             txtValor.Text = sValor;
             txtCreditos.Text = sCreditos;
 
+            Boolean[] permisos;
+            permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmCursos");
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

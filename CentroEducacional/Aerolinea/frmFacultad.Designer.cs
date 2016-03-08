@@ -42,12 +42,20 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtCondicion = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
+            this.btnIrUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnIrPrimero = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnIrUltimo);
+            this.panel1.Controls.Add(this.btnSiguiente);
+            this.panel1.Controls.Add(this.btnAnterior);
+            this.panel1.Controls.Add(this.btnIrPrimero);
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.btnImprimir);
             this.panel1.Controls.Add(this.btnRefrescar);
@@ -58,7 +66,7 @@
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Location = new System.Drawing.Point(36, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(466, 55);
+            this.panel1.Size = new System.Drawing.Size(672, 55);
             this.panel1.TabIndex = 5;
             // 
             // btnBuscar
@@ -143,7 +151,7 @@
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(160, 119);
+            this.txtNombre.Location = new System.Drawing.Point(265, 114);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(267, 20);
             this.txtNombre.TabIndex = 6;
@@ -154,7 +162,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(93, 125);
+            this.lblNombre.Location = new System.Drawing.Point(198, 120);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 7;
@@ -162,7 +170,7 @@
             // 
             // txtCondicion
             // 
-            this.txtCondicion.Location = new System.Drawing.Point(357, 145);
+            this.txtCondicion.Location = new System.Drawing.Point(462, 140);
             this.txtCondicion.Name = "txtCondicion";
             this.txtCondicion.Size = new System.Drawing.Size(32, 20);
             this.txtCondicion.TabIndex = 9;
@@ -172,7 +180,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(395, 145);
+            this.txtEstado.Location = new System.Drawing.Point(500, 140);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(32, 20);
             this.txtEstado.TabIndex = 10;
@@ -180,11 +188,47 @@
             this.txtEstado.Text = "ACTIVO";
             this.txtEstado.Visible = false;
             // 
+            // btnIrUltimo
+            // 
+            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.btnIrUltimo.Location = new System.Drawing.Point(609, 4);
+            this.btnIrUltimo.Name = "btnIrUltimo";
+            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
+            this.btnIrUltimo.TabIndex = 26;
+            this.btnIrUltimo.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
+            this.btnSiguiente.Location = new System.Drawing.Point(555, 4);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
+            this.btnSiguiente.TabIndex = 25;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
+            this.btnAnterior.Location = new System.Drawing.Point(501, 4);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
+            this.btnAnterior.TabIndex = 24;
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
+            // btnIrPrimero
+            // 
+            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
+            this.btnIrPrimero.Location = new System.Drawing.Point(447, 4);
+            this.btnIrPrimero.Name = "btnIrPrimero";
+            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
+            this.btnIrPrimero.TabIndex = 23;
+            this.btnIrPrimero.UseVisualStyleBackColor = true;
+            // 
             // frmFacultad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 237);
+            this.ClientSize = new System.Drawing.Size(720, 202);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtCondicion);
             this.Controls.Add(this.lblNombre);
@@ -215,5 +259,9 @@
         private System.Windows.Forms.TextBox txtCondicion;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnIrUltimo;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnIrPrimero;
     }
 }

@@ -30,13 +30,13 @@ namespace Aerolinea
             txtNombre.Text = sNombreSede;
             txtUbicacion.Text = sUbicacion;
             sCod = sCodSede;
-            /*
+            
             Boolean[] permisos;
             permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmSedes");
             btnNuevo.Enabled = permisos[0];
             btnEditar.Enabled = permisos[1];
             btnEliminar.Enabled = permisos[2];
-            */
+            
         }
 
 
@@ -135,7 +135,6 @@ namespace Aerolinea
             btnEliminar.Enabled = true;
             btnRefrescar.Enabled = true;
             btnBuscar.Enabled = true;
-            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -170,27 +169,7 @@ namespace Aerolinea
 
         private void txtBuscar_KeyUp(object sender, KeyEventArgs e)
         {
-           
-        }
 
-        private void btnIrPrimero_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnAnterior_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnIrUltimo_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void grdSedes_CellContentClick(object sender, DataGridViewCellEventArgs e)

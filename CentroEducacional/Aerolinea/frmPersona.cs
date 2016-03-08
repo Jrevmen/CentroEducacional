@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
+using Filtrado;
 
 namespace Aerolinea
 {
@@ -19,6 +20,14 @@ namespace Aerolinea
         public frmPersona()
         {
             InitializeComponent();
+            funCarrera();
+            funJornada();
+
+            Boolean[] permisos;
+            permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmPersona");
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
         }
 
         public frmPersona(string sCodigoP, string sDPI, string sNombreP, string sApellidoP, string sFechaP, string sSexo, string sDireccionP, string sEmailP, string sTelefonoP)
@@ -44,6 +53,13 @@ namespace Aerolinea
             txtEmail.Text = sEmailP;
             txtTelefono.Text = sTelefonoP;
             sCod = sCodigoP;
+            funCarrera();
+            funJornada();
+            Boolean[] permisos;
+            permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmPersona");
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
         }
 
 
@@ -54,6 +70,20 @@ namespace Aerolinea
             cnegocio.funconsultarRegistrosCombo("codigopersona", "SELECT MAX(codigopersona) as Codigo from persona WHERE condicion='1'", "Codigo", cmbObtenerCodigo);
             txtInformacion.Text = cmbObtenerCodigo.Text;
            // cmbObtenerCodigo.SelectedIndex = 1;
+
+        }
+
+        void funJornada()
+        {
+            clasnegocio cnegocio = new clasnegocio();
+            cnegocio.funconsultarRegistrosCombo("codigoJornada", "SELECT concat(TRIM(codigoJornada), '.', TRIM(nombre)) as Jornada from jornada WHERE condicion='1'", "Jornada", cmbJornada);
+
+        }
+
+        void funCarrera()
+        {
+            clasnegocio cnegocio = new clasnegocio();
+            cnegocio.funconsultarRegistrosCombo("codigoCarrera", "SELECT concat(TRIM(codigoCarrera), '.', TRIM(nombre)) as Carrera from carrera WHERE condicion='1'", "Carrera", cmbCarrera);
 
         }
 
@@ -139,6 +169,9 @@ namespace Aerolinea
                 txtSexo.Text = "Femenino";
             }
 
+            txtJornada.Text = cmbJornada.Text;
+            txtCarrera.Text = cmbCarrera.Text;
+
             if (estado.Equals("editar"))
             {
 
@@ -190,6 +223,10 @@ namespace Aerolinea
                 cn.AsignarObjetos(sTablaDireccion, bPermiso, aDatosDireccion);
                 claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insertar", sTablaDireccion);
 
+                TextBox[] aDatosCarnet = { txtAno, txtCorrelativo, txtEstado, txtInformacion, txtJornada, txtCarrera, txtCondicion };
+                string sTablaCarne = "carnet";
+                cn.AsignarObjetos(sTablaCarne, bPermiso, aDatosCarnet);
+                claseUsuario.funobtenerBitacora(claseUsuario.varibaleUsuario, "Insertar", sTablaCarne);
                 
             }
 
@@ -272,6 +309,35 @@ namespace Aerolinea
         private void grdPersona_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void frmPersona_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnJornada_Click(object sender, EventArgs e)
+        {
+            string sCampoCodigo = "codigoJornada";// nombre del campo del codigo 
+            string sCampoDescripcion = "nombre";// nombre del campo del nombre o descripcion 
+            string query = "Select codigoJornada, nombre from Jornada where condicion='1'";// query que devuelve los
+            //datos de codigoFacultad y nombre sin concatenar (Es el mismo query para llenar el combobox)
+            frmFiltrado filtro = new frmFiltrado(query, sCampoCodigo, sCampoDescripcion);
+            filtro.ShowDialog(this);
+            int index = cmbJornada.FindString(filtro.funResultado());
+            cmbJornada.SelectedIndex = index;//Selecciona el item del combobox 
+        }
+
+        private void btnCarrera_Click(object sender, EventArgs e)
+        {
+            string sCampoCodigo = "codigoCarrera";// nombre del campo del codigo 
+            string sCampoDescripcion = "nombre";// nombre del campo del nombre o descripcion 
+            string query = "Select codigoCarrera, nombre from carrera where condicion='1'";// query que devuelve los
+            //datos de codigoFacultad y nombre sin concatenar (Es el mismo query para llenar el combobox)
+            frmFiltrado filtro = new frmFiltrado(query, sCampoCodigo, sCampoDescripcion);
+            filtro.ShowDialog(this);
+            int index = cmbCarrera.FindString(filtro.funResultado());
+            cmbCarrera.SelectedIndex = index;//Selecciona el item del combobox 
         }
     }
 }
