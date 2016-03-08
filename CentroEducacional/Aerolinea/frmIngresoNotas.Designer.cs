@@ -46,13 +46,10 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.Fecha = new System.Windows.Forms.Label();
             this.Descripcion = new System.Windows.Forms.Label();
-            this.grdTipoNota = new System.Windows.Forms.DataGridView();
+            this.grdIngresoNotas = new System.Windows.Forms.DataGridView();
             this.Calificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtCondicion = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdIngresoNotas)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -231,17 +228,18 @@
             this.Descripcion.TabIndex = 26;
             this.Descripcion.Text = "Descripción";
             // 
-            // grdTipoNota
+            // grdIngresoNotas
             // 
-            this.grdTipoNota.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.grdTipoNota.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.grdTipoNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTipoNota.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdIngresoNotas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.grdIngresoNotas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.grdIngresoNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdIngresoNotas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Calificacion});
-            this.grdTipoNota.Location = new System.Drawing.Point(12, 138);
-            this.grdTipoNota.Name = "grdTipoNota";
-            this.grdTipoNota.Size = new System.Drawing.Size(657, 235);
-            this.grdTipoNota.TabIndex = 24;
+            this.grdIngresoNotas.Enabled = false;
+            this.grdIngresoNotas.Location = new System.Drawing.Point(12, 138);
+            this.grdIngresoNotas.Name = "grdIngresoNotas";
+            this.grdIngresoNotas.Size = new System.Drawing.Size(657, 226);
+            this.grdIngresoNotas.TabIndex = 24;
             // 
             // Calificacion
             // 
@@ -249,50 +247,21 @@
             this.Calificacion.Name = "Calificacion";
             this.Calificacion.Width = 86;
             // 
-            // txtCondicion
-            // 
-            this.txtCondicion.Location = new System.Drawing.Point(331, 112);
-            this.txtCondicion.Name = "txtCondicion";
-            this.txtCondicion.Size = new System.Drawing.Size(72, 20);
-            this.txtCondicion.TabIndex = 31;
-            this.txtCondicion.Text = "1";
-            this.txtCondicion.Visible = false;
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(88, 112);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(72, 20);
-            this.txtFecha.TabIndex = 32;
-            this.txtFecha.Visible = false;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(166, 112);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(72, 20);
-            this.txtEstado.TabIndex = 35;
-            this.txtEstado.Text = "ACTIVO";
-            this.txtEstado.Visible = false;
-            // 
             // frmIngresoNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 385);
-            this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtFecha);
-            this.Controls.Add(this.txtCondicion);
             this.Controls.Add(this.cmbDescripcion);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.Fecha);
             this.Controls.Add(this.Descripcion);
-            this.Controls.Add(this.grdTipoNota);
+            this.Controls.Add(this.grdIngresoNotas);
             this.Controls.Add(this.panel1);
             this.Name = "frmIngresoNotas";
             this.Text = "frmIngresoNotas";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdIngresoNotas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,14 +282,11 @@
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label Fecha;
         private System.Windows.Forms.Label Descripcion;
-        private System.Windows.Forms.DataGridView grdTipoNota;
+        private System.Windows.Forms.DataGridView grdIngresoNotas;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnIrPrimero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Calificacion;
-        private System.Windows.Forms.TextBox txtCondicion;
-        private System.Windows.Forms.TextBox txtFecha;
-        private System.Windows.Forms.TextBox txtEstado;
     }
 }

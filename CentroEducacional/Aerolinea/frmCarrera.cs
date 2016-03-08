@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
 using ConexionODBC;
-using System.Windows.Forms;
+
 //using Filtrado;
 
 namespace Aerolinea
