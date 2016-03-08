@@ -19,15 +19,22 @@ namespace Aerolinea
         public static OdbcDataReader _reader;
         string sCodForanea, sCodPrimaria;
         string estado = "";
+        Boolean[] permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmZona");
+
 
         public frmPonderacionNota()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         public frmPonderacionNota(string sCodPaquete)
         {
             InitializeComponent();
+
+            
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
 
             sCodForanea = sCodPaquete;
             
@@ -69,9 +76,9 @@ namespace Aerolinea
             btnCancelar.Enabled = false;
             btnBuscar.Enabled = false;
             btnImprimir.Enabled = false;
-            btnNuevo.Enabled = true;
-            btnEditar.Enabled = false;
-            btnEliminar.Enabled = false;
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
             btnIrPrimero.Enabled = true;
             btnIrUltimo.Enabled = true;
             btnSiguiente.Enabled = true;
@@ -91,9 +98,9 @@ namespace Aerolinea
             btnCancelar.Enabled = false;
             btnBuscar.Enabled = false;
             btnImprimir.Enabled = false;
-            btnNuevo.Enabled = true;
-            btnEditar.Enabled = false;
-            btnEliminar.Enabled = false;
+            btnNuevo.Enabled = permisos[0];
+            btnEditar.Enabled = permisos[1];
+            btnEliminar.Enabled = permisos[2];
             btnIrPrimero.Enabled = true;
             btnIrUltimo.Enabled = true;
             btnSiguiente.Enabled = true;

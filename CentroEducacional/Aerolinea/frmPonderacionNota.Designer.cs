@@ -75,7 +75,7 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(47, 12);
+            this.panel1.Location = new System.Drawing.Point(70, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(680, 55);
             this.panel1.TabIndex = 6;
@@ -83,7 +83,7 @@
             // btnIrUltimo
             // 
             this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
-            this.btnIrUltimo.Location = new System.Drawing.Point(609, 4);
+            this.btnIrUltimo.Location = new System.Drawing.Point(632, 2);
             this.btnIrUltimo.Name = "btnIrUltimo";
             this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
             this.btnIrUltimo.TabIndex = 16;
@@ -93,7 +93,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.Location = new System.Drawing.Point(555, 4);
+            this.btnSiguiente.Location = new System.Drawing.Point(578, 2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
             this.btnSiguiente.TabIndex = 15;
@@ -103,7 +103,7 @@
             // btnAnterior
             // 
             this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
-            this.btnAnterior.Location = new System.Drawing.Point(501, 4);
+            this.btnAnterior.Location = new System.Drawing.Point(524, 2);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(48, 42);
             this.btnAnterior.TabIndex = 14;
@@ -113,7 +113,7 @@
             // btnIrPrimero
             // 
             this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
-            this.btnIrPrimero.Location = new System.Drawing.Point(447, 4);
+            this.btnIrPrimero.Location = new System.Drawing.Point(470, 2);
             this.btnIrPrimero.Name = "btnIrPrimero";
             this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
             this.btnIrPrimero.TabIndex = 13;
@@ -123,7 +123,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.Location = new System.Drawing.Point(393, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(416, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(48, 42);
             this.btnBuscar.TabIndex = 12;
@@ -132,7 +132,7 @@
             // btnImprimir
             // 
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
-            this.btnImprimir.Location = new System.Drawing.Point(339, 4);
+            this.btnImprimir.Location = new System.Drawing.Point(362, 2);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(48, 42);
             this.btnImprimir.TabIndex = 11;
@@ -141,7 +141,7 @@
             // btnRefrescar
             // 
             this.btnRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrescar.Image")));
-            this.btnRefrescar.Location = new System.Drawing.Point(285, 4);
+            this.btnRefrescar.Location = new System.Drawing.Point(308, 2);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
             this.btnRefrescar.TabIndex = 10;
@@ -152,7 +152,7 @@
             // 
             this.btnCancelar.Enabled = false;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(231, 4);
+            this.btnCancelar.Location = new System.Drawing.Point(254, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(48, 42);
             this.btnCancelar.TabIndex = 9;
@@ -163,7 +163,7 @@
             // 
             this.btnGuardar.Enabled = false;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(177, 4);
+            this.btnGuardar.Location = new System.Drawing.Point(200, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(48, 42);
             this.btnGuardar.TabIndex = 8;
@@ -174,7 +174,7 @@
             // 
             this.btnEliminar.Enabled = false;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.Location = new System.Drawing.Point(123, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(146, 2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(48, 42);
             this.btnEliminar.TabIndex = 7;
@@ -185,7 +185,7 @@
             // 
             this.btnEditar.Enabled = false;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.Location = new System.Drawing.Point(69, 4);
+            this.btnEditar.Location = new System.Drawing.Point(92, 2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(48, 42);
             this.btnEditar.TabIndex = 6;
@@ -195,7 +195,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
-            this.btnNuevo.Location = new System.Drawing.Point(15, 4);
+            this.btnNuevo.Location = new System.Drawing.Point(38, 2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(48, 42);
             this.btnNuevo.TabIndex = 5;
@@ -206,7 +206,7 @@
             // 
             this.grdTipoNota.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdTipoNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTipoNota.Location = new System.Drawing.Point(47, 172);
+            this.grdTipoNota.Location = new System.Drawing.Point(70, 170);
             this.grdTipoNota.Name = "grdTipoNota";
             this.grdTipoNota.Size = new System.Drawing.Size(680, 186);
             this.grdTipoNota.TabIndex = 7;
@@ -215,7 +215,7 @@
             // Valor
             // 
             this.Valor.AutoSize = true;
-            this.Valor.Location = new System.Drawing.Point(48, 130);
+            this.Valor.Location = new System.Drawing.Point(71, 128);
             this.Valor.Name = "Valor";
             this.Valor.Size = new System.Drawing.Size(31, 13);
             this.Valor.TabIndex = 8;
@@ -224,7 +224,7 @@
             // Descripcion
             // 
             this.Descripcion.AutoSize = true;
-            this.Descripcion.Location = new System.Drawing.Point(48, 95);
+            this.Descripcion.Location = new System.Drawing.Point(71, 93);
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.Size = new System.Drawing.Size(63, 13);
             this.Descripcion.TabIndex = 12;
@@ -233,7 +233,7 @@
             // Fecha
             // 
             this.Fecha.AutoSize = true;
-            this.Fecha.Location = new System.Drawing.Point(292, 92);
+            this.Fecha.Location = new System.Drawing.Point(315, 90);
             this.Fecha.Name = "Fecha";
             this.Fecha.Size = new System.Drawing.Size(37, 13);
             this.Fecha.TabIndex = 14;
@@ -244,14 +244,14 @@
             this.dtpFecha.CustomFormat = "yyyy-MM-dd";
             this.dtpFecha.Enabled = false;
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFecha.Location = new System.Drawing.Point(357, 89);
+            this.dtpFecha.Location = new System.Drawing.Point(380, 87);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
             this.dtpFecha.TabIndex = 15;
             // 
             // txtfecha
             // 
-            this.txtfecha.Location = new System.Drawing.Point(584, 89);
+            this.txtfecha.Location = new System.Drawing.Point(607, 87);
             this.txtfecha.Name = "txtfecha";
             this.txtfecha.Size = new System.Drawing.Size(47, 20);
             this.txtfecha.TabIndex = 16;
@@ -263,18 +263,18 @@
             this.cmbDescripcion.Enabled = false;
             this.cmbDescripcion.FormattingEnabled = true;
             this.cmbDescripcion.Items.AddRange(new object[] {
-            "Parcial",
+            "1er Parcial",
+            "2do Parcial",
             "Actividades",
-            "Proyecto",
             "Final"});
-            this.cmbDescripcion.Location = new System.Drawing.Point(117, 92);
+            this.cmbDescripcion.Location = new System.Drawing.Point(140, 90);
             this.cmbDescripcion.Name = "cmbDescripcion";
             this.cmbDescripcion.Size = new System.Drawing.Size(156, 21);
             this.cmbDescripcion.TabIndex = 17;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(603, 127);
+            this.txtEstado.Location = new System.Drawing.Point(626, 125);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(48, 20);
             this.txtEstado.TabIndex = 19;
@@ -292,14 +292,14 @@
             "20",
             "25",
             "50"});
-            this.cmbValor.Location = new System.Drawing.Point(117, 130);
+            this.cmbValor.Location = new System.Drawing.Point(140, 128);
             this.cmbValor.Name = "cmbValor";
             this.cmbValor.Size = new System.Drawing.Size(156, 21);
             this.cmbValor.TabIndex = 20;
             // 
             // txtCondicion
             // 
-            this.txtCondicion.Location = new System.Drawing.Point(657, 127);
+            this.txtCondicion.Location = new System.Drawing.Point(680, 125);
             this.txtCondicion.Name = "txtCondicion";
             this.txtCondicion.Size = new System.Drawing.Size(48, 20);
             this.txtCondicion.TabIndex = 21;
@@ -309,7 +309,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(657, 89);
+            this.txtDescripcion.Location = new System.Drawing.Point(680, 87);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(48, 20);
             this.txtDescripcion.TabIndex = 22;
@@ -318,7 +318,7 @@
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(549, 130);
+            this.txtValor.Location = new System.Drawing.Point(572, 128);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(48, 20);
             this.txtValor.TabIndex = 23;
@@ -327,7 +327,7 @@
             // 
             // txtCodigopaquete
             // 
-            this.txtCodigopaquete.Location = new System.Drawing.Point(495, 131);
+            this.txtCodigopaquete.Location = new System.Drawing.Point(518, 129);
             this.txtCodigopaquete.Name = "txtCodigopaquete";
             this.txtCodigopaquete.Size = new System.Drawing.Size(48, 20);
             this.txtCodigopaquete.TabIndex = 24;
@@ -336,7 +336,7 @@
             // 
             // txtCodigTipoNota
             // 
-            this.txtCodigTipoNota.Location = new System.Drawing.Point(441, 131);
+            this.txtCodigTipoNota.Location = new System.Drawing.Point(464, 129);
             this.txtCodigTipoNota.Name = "txtCodigTipoNota";
             this.txtCodigTipoNota.Size = new System.Drawing.Size(48, 20);
             this.txtCodigTipoNota.TabIndex = 25;
@@ -363,9 +363,10 @@
             this.Controls.Add(this.Valor);
             this.Controls.Add(this.grdTipoNota);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPonderacionNota";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPonderacionNota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "PonderacionNota";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdTipoNota)).EndInit();
             this.ResumeLayout(false);

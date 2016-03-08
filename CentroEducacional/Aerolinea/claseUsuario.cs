@@ -47,7 +47,7 @@ namespace Aerolinea
             if (_reader.Read())
                 codigo = _reader.GetString(0);
 
-            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, ip, codigo_usuario) VALUES('{0}','{1}',CURDATE(), DATE_FORMAT(CURTIME(), '%h:%i:%s'), '{2}','{3}')", Accion, table, ip, codigo), ConexionODBC.Conexion.ObtenerConexion());
+            _comando = new OdbcCommand(String.Format("INSERT INTO BITACORA (accion, tabla, fecha, hora, ip, codigo_usuario) VALUES('{0}','{1}',CURDATE(),DATE_FORMAT(CURTIME(), '%h:%i:%s'), '{2}','{3}')", Accion, table, ip, codigo), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
         }
 
@@ -105,13 +105,11 @@ namespace Aerolinea
             _reader = _comando.ExecuteReader();
             if(_reader.Read())
                 privilegio = _reader.GetString(0);
-            MessageBox.Show("Privilego: "+privilegio);
             _comando = new OdbcCommand(String.Format("select validacion from PERMISO where codigo_privilegios = '{0}'", privilegio), ConexionODBC.Conexion.ObtenerConexion());
             _reader = _comando.ExecuteReader();
             while (_reader.Read())
             {
                 permisos[i] = _reader.GetBoolean(0);
-                MessageBox.Show(i + " " + permisos[i]);
                 i++;
             }
             return permisos;

@@ -168,7 +168,7 @@
             this.Controls.Add(this.grdPaquete);
             this.MaximizeBox = false;
             this.Name = "frmPrincipalPonderacionNota";
-            this.Text = "frmPonderaciónNota";
+            this.Text = "Ponderación Nota";
             ((System.ComponentModel.ISupportInitialize)(this.grdPaquete)).EndInit();
             this.grupoFiltrar.ResumeLayout(false);
             this.grupoFiltrar.PerformLayout();

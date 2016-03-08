@@ -68,6 +68,8 @@ namespace Aerolinea
             string sHorario = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[3].Value.ToString();
             string sSeccion = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[4].Value.ToString();*/
             frmPonderacionNota temp = new frmPonderacionNota(sCodPaquete/*, sNombre, sSalon, sHorario, sSeccion*/);
+            temp.WindowState = FormWindowState.Normal;
+            //temp.MdiParent = this.MdiParent;            
             temp.Show();
         }
         
