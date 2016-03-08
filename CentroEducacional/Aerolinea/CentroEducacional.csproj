@@ -252,6 +252,12 @@
     <Compile Include="frmPrincipalPonderacionNota.designer.cs">
       <DependentUpon>frmPrincipalPonderacionNota.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipalReasignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalReasignacion.Designer.cs">
+      <DependentUpon>frmPrincipalReasignacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipalSalones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,12 @@
     </Compile>
     <Compile Include="frmPrincipalUsuarios.designer.cs">
       <DependentUpon>frmPrincipalUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReasignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReasignacion.Designer.cs">
+      <DependentUpon>frmReasignacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmreporteUsuarios.cs">
       <SubType>Form</SubType>
@@ -407,6 +419,9 @@
     <EmbeddedResource Include="frmPrincipalPonderacionNota.resx">
       <DependentUpon>frmPrincipalPonderacionNota.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalReasignacion.resx">
+      <DependentUpon>frmPrincipalReasignacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalSalones.resx">
       <DependentUpon>frmPrincipalSalones.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipalUsuarios.resx">
       <DependentUpon>frmPrincipalUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReasignacion.resx">
+      <DependentUpon>frmReasignacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmreporteUsuarios.resx">
       <DependentUpon>frmreporteUsuarios.cs</DependentUpon>

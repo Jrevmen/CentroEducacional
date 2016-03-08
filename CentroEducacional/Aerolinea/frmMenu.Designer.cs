@@ -356,6 +356,7 @@
             this.cobroReasignacionToolStripMenuItem.Name = "cobroReasignacionToolStripMenuItem";
             this.cobroReasignacionToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.cobroReasignacionToolStripMenuItem.Text = "Cobro de Reasignacion";
+            this.cobroReasignacionToolStripMenuItem.Click += new System.EventHandler(this.cobroReasignacionToolStripMenuItem_Click);
             // 
             // cobroDeDocumentosToolStripMenuItem
             // 
@@ -505,6 +506,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

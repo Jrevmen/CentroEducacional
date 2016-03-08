@@ -264,5 +264,19 @@ namespace Aerolinea
             pictureBox1.Visible = false;
             temp.Show();
         }
+
+        private void cobroReasignacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalReasignacion temp = new frmPrincipalReasignacion();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
