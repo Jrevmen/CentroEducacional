@@ -9,8 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Navegador;
 using ConexionODBC;
+<<<<<<< HEAD
 using System.Windows.Forms;
 using Filtrado;
+=======
+
+//using Filtrado;
+>>>>>>> refs/remotes/origin/Kevin
 
 namespace Aerolinea
 {
