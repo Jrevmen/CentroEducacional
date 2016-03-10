@@ -49,6 +49,11 @@
             this.txtFacultad = new System.Windows.Forms.TextBox();
             this.txtCondicion = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
+            this.btnCmbSede = new System.Windows.Forms.Button();
+            this.btnIrUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnIrPrimero = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +70,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(78, 100);
+            this.lblNombre.Location = new System.Drawing.Point(184, 105);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 13;
@@ -74,7 +79,7 @@
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(145, 94);
+            this.txtNombre.Location = new System.Drawing.Point(251, 99);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(267, 20);
             this.txtNombre.TabIndex = 12;
@@ -84,6 +89,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnIrUltimo);
+            this.panel1.Controls.Add(this.btnSiguiente);
+            this.panel1.Controls.Add(this.btnAnterior);
+            this.panel1.Controls.Add(this.btnIrPrimero);
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.btnImprimir);
             this.panel1.Controls.Add(this.btnRefrescar);
@@ -94,7 +103,7 @@
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Location = new System.Drawing.Point(23, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(457, 55);
+            this.panel1.Size = new System.Drawing.Size(666, 55);
             this.panel1.TabIndex = 17;
             // 
             // btnBuscar
@@ -179,7 +188,7 @@
             // lblFacultad
             // 
             this.lblFacultad.AutoSize = true;
-            this.lblFacultad.Location = new System.Drawing.Point(78, 141);
+            this.lblFacultad.Location = new System.Drawing.Point(184, 146);
             this.lblFacultad.Name = "lblFacultad";
             this.lblFacultad.Size = new System.Drawing.Size(51, 13);
             this.lblFacultad.TabIndex = 18;
@@ -190,7 +199,7 @@
             this.cmbFacultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFacultad.Enabled = false;
             this.cmbFacultad.FormattingEnabled = true;
-            this.cmbFacultad.Location = new System.Drawing.Point(145, 133);
+            this.cmbFacultad.Location = new System.Drawing.Point(251, 138);
             this.cmbFacultad.Name = "cmbFacultad";
             this.cmbFacultad.Size = new System.Drawing.Size(267, 21);
             this.cmbFacultad.TabIndex = 19;
@@ -200,7 +209,7 @@
             this.cmbSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSede.Enabled = false;
             this.cmbSede.FormattingEnabled = true;
-            this.cmbSede.Location = new System.Drawing.Point(145, 172);
+            this.cmbSede.Location = new System.Drawing.Point(251, 177);
             this.cmbSede.Name = "cmbSede";
             this.cmbSede.Size = new System.Drawing.Size(267, 21);
             this.cmbSede.TabIndex = 21;
@@ -208,7 +217,7 @@
             // lblSede
             // 
             this.lblSede.AutoSize = true;
-            this.lblSede.Location = new System.Drawing.Point(78, 180);
+            this.lblSede.Location = new System.Drawing.Point(184, 185);
             this.lblSede.Name = "lblSede";
             this.lblSede.Size = new System.Drawing.Size(35, 13);
             this.lblSede.TabIndex = 20;
@@ -245,18 +254,65 @@
             // btnFiltrar
             // 
             this.btnFiltrar.Image = ((System.Drawing.Image)(resources.GetObject("btnFiltrar.Image")));
-            this.btnFiltrar.Location = new System.Drawing.Point(417, 111);
+            this.btnFiltrar.Location = new System.Drawing.Point(523, 135);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(47, 43);
+            this.btnFiltrar.Size = new System.Drawing.Size(28, 24);
             this.btnFiltrar.TabIndex = 13;
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // btnCmbSede
+            // 
+            this.btnCmbSede.Image = ((System.Drawing.Image)(resources.GetObject("btnCmbSede.Image")));
+            this.btnCmbSede.Location = new System.Drawing.Point(524, 174);
+            this.btnCmbSede.Name = "btnCmbSede";
+            this.btnCmbSede.Size = new System.Drawing.Size(28, 24);
+            this.btnCmbSede.TabIndex = 26;
+            this.btnCmbSede.UseVisualStyleBackColor = true;
+            this.btnCmbSede.Click += new System.EventHandler(this.btnCmbSede_Click);
+            // 
+            // btnIrUltimo
+            // 
+            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.btnIrUltimo.Location = new System.Drawing.Point(608, 5);
+            this.btnIrUltimo.Name = "btnIrUltimo";
+            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
+            this.btnIrUltimo.TabIndex = 26;
+            this.btnIrUltimo.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
+            this.btnSiguiente.Location = new System.Drawing.Point(554, 5);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
+            this.btnSiguiente.TabIndex = 25;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
+            this.btnAnterior.Location = new System.Drawing.Point(500, 5);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
+            this.btnAnterior.TabIndex = 24;
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
+            // btnIrPrimero
+            // 
+            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
+            this.btnIrPrimero.Location = new System.Drawing.Point(446, 5);
+            this.btnIrPrimero.Name = "btnIrPrimero";
+            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
+            this.btnIrPrimero.TabIndex = 23;
+            this.btnIrPrimero.UseVisualStyleBackColor = true;
             // 
             // frmCarrera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 224);
+            this.ClientSize = new System.Drawing.Size(712, 230);
+            this.Controls.Add(this.btnCmbSede);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.txtCondicion);
             this.Controls.Add(this.txtFacultad);
@@ -301,5 +357,10 @@
         private System.Windows.Forms.TextBox txtFacultad;
         private System.Windows.Forms.TextBox txtCondicion;
         private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.Button btnCmbSede;
+        private System.Windows.Forms.Button btnIrUltimo;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnIrPrimero;
     }
 }

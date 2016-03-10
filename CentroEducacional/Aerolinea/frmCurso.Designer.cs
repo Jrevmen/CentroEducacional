@@ -46,6 +46,10 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.txtCreditos = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnIrUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnIrPrimero = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +76,7 @@
             // txtValor
             // 
             this.txtValor.Enabled = false;
-            this.txtValor.Location = new System.Drawing.Point(201, 145);
+            this.txtValor.Location = new System.Drawing.Point(359, 106);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(84, 20);
             this.txtValor.TabIndex = 33;
@@ -81,7 +85,7 @@
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(202, 108);
+            this.txtNombre.Location = new System.Drawing.Point(93, 106);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(197, 20);
             this.txtNombre.TabIndex = 32;
@@ -90,7 +94,7 @@
             // lblCuotas
             // 
             this.lblCuotas.AutoSize = true;
-            this.lblCuotas.Location = new System.Drawing.Point(134, 152);
+            this.lblCuotas.Location = new System.Drawing.Point(311, 111);
             this.lblCuotas.Name = "lblCuotas";
             this.lblCuotas.Size = new System.Drawing.Size(34, 13);
             this.lblCuotas.TabIndex = 31;
@@ -99,7 +103,7 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(130, 113);
+            this.lblDescripcion.Location = new System.Drawing.Point(21, 111);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(47, 13);
             this.lblDescripcion.TabIndex = 30;
@@ -108,6 +112,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnIrUltimo);
+            this.panel1.Controls.Add(this.btnSiguiente);
+            this.panel1.Controls.Add(this.btnAnterior);
+            this.panel1.Controls.Add(this.btnIrPrimero);
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.btnImprimir);
             this.panel1.Controls.Add(this.btnRefrescar);
@@ -118,7 +126,7 @@
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Location = new System.Drawing.Point(23, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(460, 55);
+            this.panel1.Size = new System.Drawing.Size(671, 55);
             this.panel1.TabIndex = 29;
             // 
             // btnBuscar
@@ -201,7 +209,7 @@
             // txtCreditos
             // 
             this.txtCreditos.Enabled = false;
-            this.txtCreditos.Location = new System.Drawing.Point(201, 180);
+            this.txtCreditos.Location = new System.Drawing.Point(552, 106);
             this.txtCreditos.Name = "txtCreditos";
             this.txtCreditos.Size = new System.Drawing.Size(84, 20);
             this.txtCreditos.TabIndex = 37;
@@ -210,17 +218,53 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(134, 187);
+            this.label1.Location = new System.Drawing.Point(484, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 36;
             this.label1.Text = "Creditos:";
             // 
+            // btnIrUltimo
+            // 
+            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.btnIrUltimo.Location = new System.Drawing.Point(609, 6);
+            this.btnIrUltimo.Name = "btnIrUltimo";
+            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
+            this.btnIrUltimo.TabIndex = 26;
+            this.btnIrUltimo.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
+            this.btnSiguiente.Location = new System.Drawing.Point(555, 6);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
+            this.btnSiguiente.TabIndex = 25;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
+            this.btnAnterior.Location = new System.Drawing.Point(501, 6);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
+            this.btnAnterior.TabIndex = 24;
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
+            // btnIrPrimero
+            // 
+            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
+            this.btnIrPrimero.Location = new System.Drawing.Point(447, 6);
+            this.btnIrPrimero.Name = "btnIrPrimero";
+            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
+            this.btnIrPrimero.TabIndex = 23;
+            this.btnIrPrimero.UseVisualStyleBackColor = true;
+            // 
             // frmCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 227);
+            this.ClientSize = new System.Drawing.Size(731, 177);
             this.Controls.Add(this.txtCreditos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCondicion);
@@ -257,5 +301,9 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.TextBox txtCreditos;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnIrUltimo;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnIrPrimero;
     }
 }

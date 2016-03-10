@@ -37,12 +37,12 @@ namespace Aerolinea
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmFacultad") == "no") { this.facultadToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmAsigOrd") == "no") { this.asignacionOrdinariaToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmReasignacion") == "no") { this.reasignacionesToolStripMenuItem.Enabled = false; }
-            if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmAsignParq") == "no") { this.asignacionDeParqueoToolStripMenuItem.Enabled = false; }
+            if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmAsigParq") == "no") { this.asignacionDeParqueoToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmReinscripcion") == "no") { this.reinscripcionesToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCreacionPensum") == "no") { this.creacionDePensumToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCreacionPaquete") == "no") { this.creacionDePaquetesToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmNotas") == "no") { this.mantenimientoToolStripMenuItem.Enabled = false; }
-            if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmZona") == "no") { this.distribucionZonaToolStripMenuItem.Enabled = false; }
+            //if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmZona") == "no") { this.distribucionZonaToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCobroParqueo") == "no") { this.cobroDeParqueoToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmMensualidad") == "no") { this.cobroDeMensualidadToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCobroInscrip") == "no") { this.cobroDeInscripcionToolStripMenuItem.Enabled = false; }

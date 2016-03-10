@@ -29,13 +29,13 @@ namespace Aerolinea
             sCod = sCodPago;
             txtDescripcion.Text = sDescripcion;
             txtCuotas.Text = sCuotas;
-            /*
+            
             Boolean[] permisos;
             permisos = claseUsuario.PermisosBotones(claseUsuario.varibaleUsuario, "frmTipoPago");
             btnNuevo.Enabled = permisos[0];
             btnEditar.Enabled = permisos[1];
             btnEliminar.Enabled = permisos[2];
-            */
+            
         }
 
 
@@ -134,7 +134,6 @@ namespace Aerolinea
             btnEliminar.Enabled = true;
             btnRefrescar.Enabled = true;
             btnBuscar.Enabled = true;
-            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -182,27 +181,7 @@ namespace Aerolinea
 
         private void grdPago_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
-        }
 
-        private void btnIrPrimero_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnAnterior_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnIrUltimo_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void frmTipoPago_Load(object sender, EventArgs e)

@@ -30,8 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPersona));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnIrUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnIrPrimero = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -61,6 +65,16 @@
             this.cmbObtenerCodigo = new System.Windows.Forms.ComboBox();
             this.txtInformacion = new System.Windows.Forms.TextBox();
             this.txtCondicion = new System.Windows.Forms.TextBox();
+            this.cmbJornada = new System.Windows.Forms.ComboBox();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCarrera = new System.Windows.Forms.TextBox();
+            this.txtJornada = new System.Windows.Forms.TextBox();
+            this.btnJornada = new System.Windows.Forms.Button();
+            this.btnCarrera = new System.Windows.Forms.Button();
+            this.txtAno = new System.Windows.Forms.TextBox();
+            this.txtCorrelativo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.grupoSexo.SuspendLayout();
             this.SuspendLayout();
@@ -68,18 +82,40 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnIrUltimo);
+            this.panel1.Controls.Add(this.btnSiguiente);
             this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Controls.Add(this.btnAnterior);
             this.panel1.Controls.Add(this.btnImprimir);
+            this.panel1.Controls.Add(this.btnIrPrimero);
             this.panel1.Controls.Add(this.btnRefrescar);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(134, 12);
+            this.panel1.Location = new System.Drawing.Point(33, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(458, 55);
+            this.panel1.Size = new System.Drawing.Size(670, 55);
             this.panel1.TabIndex = 16;
+            // 
+            // btnIrUltimo
+            // 
+            this.btnIrUltimo.Image = ((System.Drawing.Image)(resources.GetObject("btnIrUltimo.Image")));
+            this.btnIrUltimo.Location = new System.Drawing.Point(610, 4);
+            this.btnIrUltimo.Name = "btnIrUltimo";
+            this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
+            this.btnIrUltimo.TabIndex = 42;
+            this.btnIrUltimo.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
+            this.btnSiguiente.Location = new System.Drawing.Point(556, 4);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
+            this.btnSiguiente.TabIndex = 41;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
             // 
             // btnBuscar
             // 
@@ -90,6 +126,15 @@
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
+            this.btnAnterior.Location = new System.Drawing.Point(502, 4);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(48, 42);
+            this.btnAnterior.TabIndex = 40;
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
             // btnImprimir
             // 
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
@@ -98,6 +143,15 @@
             this.btnImprimir.Size = new System.Drawing.Size(48, 42);
             this.btnImprimir.TabIndex = 11;
             this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
+            // btnIrPrimero
+            // 
+            this.btnIrPrimero.Image = ((System.Drawing.Image)(resources.GetObject("btnIrPrimero.Image")));
+            this.btnIrPrimero.Location = new System.Drawing.Point(448, 4);
+            this.btnIrPrimero.Name = "btnIrPrimero";
+            this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
+            this.btnIrPrimero.TabIndex = 39;
+            this.btnIrPrimero.UseVisualStyleBackColor = true;
             // 
             // btnRefrescar
             // 
@@ -181,7 +235,7 @@
             this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(309, 90);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(150, 20);
+            this.txtNombre.Size = new System.Drawing.Size(160, 20);
             this.txtNombre.TabIndex = 21;
             this.txtNombre.Tag = "nombre";
             // 
@@ -217,7 +271,7 @@
             // txtApellido
             // 
             this.txtApellido.Enabled = false;
-            this.txtApellido.Location = new System.Drawing.Point(531, 90);
+            this.txtApellido.Location = new System.Drawing.Point(552, 90);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(150, 20);
             this.txtApellido.TabIndex = 25;
@@ -226,7 +280,7 @@
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(479, 95);
+            this.lblApellido.Location = new System.Drawing.Point(500, 95);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(47, 13);
             this.lblApellido.TabIndex = 24;
@@ -239,7 +293,7 @@
             this.grupoSexo.Enabled = false;
             this.grupoSexo.Location = new System.Drawing.Point(266, 137);
             this.grupoSexo.Name = "grupoSexo";
-            this.grupoSexo.Size = new System.Drawing.Size(199, 40);
+            this.grupoSexo.Size = new System.Drawing.Size(203, 40);
             this.grupoSexo.TabIndex = 26;
             this.grupoSexo.TabStop = false;
             this.grupoSexo.Text = "Sexo";
@@ -269,7 +323,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Enabled = false;
-            this.txtDireccion.Location = new System.Drawing.Point(531, 200);
+            this.txtDireccion.Location = new System.Drawing.Point(552, 200);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(150, 20);
             this.txtDireccion.TabIndex = 32;
@@ -279,7 +333,7 @@
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(471, 203);
+            this.lblDireccion.Location = new System.Drawing.Point(492, 203);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(55, 13);
             this.lblDireccion.TabIndex = 31;
@@ -290,7 +344,7 @@
             this.txtTelefono.Enabled = false;
             this.txtTelefono.Location = new System.Drawing.Point(309, 200);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(150, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(160, 20);
             this.txtTelefono.TabIndex = 30;
             this.txtTelefono.Tag = "telefono";
             // 
@@ -324,7 +378,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(417, 223);
+            this.txtEstado.Location = new System.Drawing.Point(644, 306);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(32, 20);
             this.txtEstado.TabIndex = 33;
@@ -334,7 +388,7 @@
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(370, 223);
+            this.txtFecha.Location = new System.Drawing.Point(597, 306);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(32, 20);
             this.txtFecha.TabIndex = 34;
@@ -343,7 +397,7 @@
             // 
             // txtSexo
             // 
-            this.txtSexo.Location = new System.Drawing.Point(325, 223);
+            this.txtSexo.Location = new System.Drawing.Point(552, 306);
             this.txtSexo.Name = "txtSexo";
             this.txtSexo.Size = new System.Drawing.Size(32, 20);
             this.txtSexo.TabIndex = 35;
@@ -353,7 +407,7 @@
             // cmbObtenerCodigo
             // 
             this.cmbObtenerCodigo.FormattingEnabled = true;
-            this.cmbObtenerCodigo.Location = new System.Drawing.Point(261, 223);
+            this.cmbObtenerCodigo.Location = new System.Drawing.Point(488, 306);
             this.cmbObtenerCodigo.Name = "cmbObtenerCodigo";
             this.cmbObtenerCodigo.Size = new System.Drawing.Size(44, 21);
             this.cmbObtenerCodigo.TabIndex = 36;
@@ -361,7 +415,7 @@
             // 
             // txtInformacion
             // 
-            this.txtInformacion.Location = new System.Drawing.Point(220, 224);
+            this.txtInformacion.Location = new System.Drawing.Point(447, 307);
             this.txtInformacion.Name = "txtInformacion";
             this.txtInformacion.Size = new System.Drawing.Size(32, 20);
             this.txtInformacion.TabIndex = 37;
@@ -370,7 +424,7 @@
             // 
             // txtCondicion
             // 
-            this.txtCondicion.Location = new System.Drawing.Point(455, 224);
+            this.txtCondicion.Location = new System.Drawing.Point(682, 307);
             this.txtCondicion.Name = "txtCondicion";
             this.txtCondicion.Size = new System.Drawing.Size(45, 20);
             this.txtCondicion.TabIndex = 38;
@@ -378,11 +432,117 @@
             this.txtCondicion.Text = "1";
             this.txtCondicion.Visible = false;
             // 
+            // cmbJornada
+            // 
+            this.cmbJornada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbJornada.FormattingEnabled = true;
+            this.cmbJornada.Location = new System.Drawing.Point(79, 263);
+            this.cmbJornada.Name = "cmbJornada";
+            this.cmbJornada.Size = new System.Drawing.Size(150, 21);
+            this.cmbJornada.TabIndex = 39;
+            // 
+            // cmbCarrera
+            // 
+            this.cmbCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Location = new System.Drawing.Point(319, 263);
+            this.cmbCarrera.Name = "cmbCarrera";
+            this.cmbCarrera.Size = new System.Drawing.Size(150, 21);
+            this.cmbCarrera.TabIndex = 40;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(269, 268);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 41;
+            this.label1.Tag = "nombre";
+            this.label1.Text = "Carrera:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(29, 268);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 42;
+            this.label2.Tag = "nombre";
+            this.label2.Text = "Jornada:";
+            // 
+            // txtCarrera
+            // 
+            this.txtCarrera.Location = new System.Drawing.Point(371, 307);
+            this.txtCarrera.Name = "txtCarrera";
+            this.txtCarrera.Size = new System.Drawing.Size(32, 20);
+            this.txtCarrera.TabIndex = 43;
+            this.txtCarrera.Tag = "codigoCarrera";
+            this.txtCarrera.Visible = false;
+            // 
+            // txtJornada
+            // 
+            this.txtJornada.Location = new System.Drawing.Point(409, 306);
+            this.txtJornada.Name = "txtJornada";
+            this.txtJornada.Size = new System.Drawing.Size(32, 20);
+            this.txtJornada.TabIndex = 44;
+            this.txtJornada.Tag = "codigoJornada";
+            this.txtJornada.Visible = false;
+            // 
+            // btnJornada
+            // 
+            this.btnJornada.Image = ((System.Drawing.Image)(resources.GetObject("btnJornada.Image")));
+            this.btnJornada.Location = new System.Drawing.Point(235, 263);
+            this.btnJornada.Name = "btnJornada";
+            this.btnJornada.Size = new System.Drawing.Size(28, 24);
+            this.btnJornada.TabIndex = 45;
+            this.btnJornada.UseVisualStyleBackColor = true;
+            this.btnJornada.Click += new System.EventHandler(this.btnJornada_Click);
+            // 
+            // btnCarrera
+            // 
+            this.btnCarrera.Image = ((System.Drawing.Image)(resources.GetObject("btnCarrera.Image")));
+            this.btnCarrera.Location = new System.Drawing.Point(475, 263);
+            this.btnCarrera.Name = "btnCarrera";
+            this.btnCarrera.Size = new System.Drawing.Size(28, 24);
+            this.btnCarrera.TabIndex = 46;
+            this.btnCarrera.UseVisualStyleBackColor = true;
+            this.btnCarrera.Click += new System.EventHandler(this.btnCarrera_Click);
+            // 
+            // txtAno
+            // 
+            this.txtAno.Location = new System.Drawing.Point(333, 307);
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(32, 20);
+            this.txtAno.TabIndex = 47;
+            this.txtAno.Tag = "ano";
+            this.txtAno.Text = "2016";
+            this.txtAno.Visible = false;
+            // 
+            // txtCorrelativo
+            // 
+            this.txtCorrelativo.Location = new System.Drawing.Point(295, 307);
+            this.txtCorrelativo.Name = "txtCorrelativo";
+            this.txtCorrelativo.Size = new System.Drawing.Size(32, 20);
+            this.txtCorrelativo.TabIndex = 48;
+            this.txtCorrelativo.Tag = "correlativo";
+            this.txtCorrelativo.Text = "1";
+            this.txtCorrelativo.Visible = false;
+            // 
             // frmPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 276);
+            this.ClientSize = new System.Drawing.Size(743, 329);
+            this.Controls.Add(this.txtCorrelativo);
+            this.Controls.Add(this.txtAno);
+            this.Controls.Add(this.btnCarrera);
+            this.Controls.Add(this.btnJornada);
+            this.Controls.Add(this.txtJornada);
+            this.Controls.Add(this.txtCarrera);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbCarrera);
+            this.Controls.Add(this.cmbJornada);
             this.Controls.Add(this.txtCondicion);
             this.Controls.Add(this.txtInformacion);
             this.Controls.Add(this.cmbObtenerCodigo);
@@ -409,6 +569,7 @@
             this.Name = "frmPersona";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPersona";
+            this.Load += new System.EventHandler(this.frmPersona_Load);
             this.panel1.ResumeLayout(false);
             this.grupoSexo.ResumeLayout(false);
             this.grupoSexo.PerformLayout();
@@ -451,5 +612,19 @@
         private System.Windows.Forms.ComboBox cmbObtenerCodigo;
         private System.Windows.Forms.TextBox txtInformacion;
         private System.Windows.Forms.TextBox txtCondicion;
+        private System.Windows.Forms.Button btnIrUltimo;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnIrPrimero;
+        private System.Windows.Forms.ComboBox cmbJornada;
+        private System.Windows.Forms.ComboBox cmbCarrera;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtCarrera;
+        private System.Windows.Forms.TextBox txtJornada;
+        private System.Windows.Forms.Button btnJornada;
+        private System.Windows.Forms.Button btnCarrera;
+        private System.Windows.Forms.TextBox txtAno;
+        private System.Windows.Forms.TextBox txtCorrelativo;
     }
 }

@@ -198,6 +198,10 @@ C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrin
 C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalTipoServicio.resources
 C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.frmPrincipalUsuarios.resources
 C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\obj\Release\Aerolinea.peueba.resources
+<<<<<<< HEAD
 C:\Users\Gomez\Documents\GitHub\CentroEducacional\CentroEducacional\Aerolinea\bin\Release\Aerolinea.exe.config
 C:\Users\Gomez\Documents\GitHub\CentroEducacional\CentroEducacional\Aerolinea\obj\Release\Aerolinea.exe
 C:\Users\Gomez\Documents\GitHub\CentroEducacional\CentroEducacional\Aerolinea\obj\Release\Aerolinea.pdb
+=======
+C:\Users\Josue\Desktop\CentroEducacional\Aerolinea\bin\Release\Filtrado.dll
+>>>>>>> 6dbb7336b414b23b7b21e0903ddcb52eafee7a80
