@@ -16,6 +16,9 @@ namespace Aerolinea
         public frmMenu()
         {
             InitializeComponent();
+            
+            this.UseWaitCursor = true;
+            this.Cursor = Cursors.AppStarting;
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmPersona") == "no") { this.alumnosToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmEmpleado") == "no") { this.empleadosToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmFamilia") == "no") { this.familiaresToolStripMenuItem.Enabled = false; }
@@ -42,7 +45,7 @@ namespace Aerolinea
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCreacionPensum") == "no") { this.creacionDePensumToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCreacionPaquete") == "no") { this.creacionDePaquetesToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmNotas") == "no") { this.mantenimientoToolStripMenuItem.Enabled = false; }
-            //if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmZona") == "no") { this.distribucionZonaToolStripMenuItem.Enabled = false; }
+            if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmZona") == "no") { this.distribucionZonaToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCobroParqueo") == "no") { this.cobroDeParqueoToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmMensualidad") == "no") { this.cobroDeMensualidadToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmCobroInscrip") == "no") { this.cobroDeInscripcionToolStripMenuItem.Enabled = false; }
@@ -57,6 +60,9 @@ namespace Aerolinea
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmPagosPendientes") == "no") { this.boletaDePagosPendientesToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmSolvencias") == "no") { this.solvenciasToolStripMenuItem.Enabled = false; }
             if (claseUsuario.ObtenerPermisosForm(claseUsuario.varibaleUsuario, "frmReporteCatalogos") == "no") { this.reportesDeCatalogosToolStripMenuItem.Enabled = false; }
+            this.Cursor = Cursors.Arrow;
+            this.UseWaitCursor = false;
+
         }
 
         private void cERRARSESSIONToolStripMenuItem_Click(object sender, EventArgs e)
@@ -221,12 +227,12 @@ namespace Aerolinea
         }
 
         private void distribucionZonaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPonderacionNota temp = new frmPonderacionNota();
+        {            
+            frmPrincipalPonderacionNota temp = new frmPrincipalPonderacionNota();
             temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             pictureBox1.Visible = false;
-            temp.Show();
+            temp.Show();                   
         }
 
         private void cobroDeParqueoToolStripMenuItem_Click(object sender, EventArgs e)

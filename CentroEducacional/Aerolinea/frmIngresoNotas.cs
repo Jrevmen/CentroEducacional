@@ -7,33 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
 using Navegador;
 using ConexionODBC;
 using System.Data.Odbc;
->>>>>>> refs/remotes/origin/Kevin
 
 namespace Aerolinea
 {
     public partial class frmIngresoNotas : Form
     {
-<<<<<<< HEAD
-=======
         public static OdbcCommand _comando;
         public static OdbcDataReader _reader;
         string sCPaquete;
         string sNomUsuario;
         string sCodigoEmpleado;
         string sCadena;
-
->>>>>>> refs/remotes/origin/Kevin
         public frmIngresoNotas()
         {
             InitializeComponent();                       
         }
-<<<<<<< HEAD
-=======
+ 
+
 
         public frmIngresoNotas(string sCodPaquete)
         {
@@ -321,6 +314,6 @@ namespace Aerolinea
         }
 
         
->>>>>>> refs/remotes/origin/Kevin
+
     }
 }

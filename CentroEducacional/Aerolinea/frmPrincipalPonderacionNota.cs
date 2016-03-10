@@ -63,11 +63,11 @@ namespace Aerolinea
         private void grdPaquete_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             string sCodPaquete = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[0].Value.ToString();
-            /*string sNombre = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[1].Value.ToString();
-            string sSalon = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[2].Value.ToString();
-            string sHorario = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[3].Value.ToString();
-            string sSeccion = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[4].Value.ToString();*/
-            frmPonderacionNota temp = new frmPonderacionNota(sCodPaquete/*, sNombre, sSalon, sHorario, sSeccion*/);
+            string sNombre = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[1].Value.ToString();
+           /* string sSalon = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            string sHorario = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[3].Value.ToString();*/
+            string sSeccion = grdPaquete.Rows[grdPaquete.CurrentCell.RowIndex].Cells[4].Value.ToString();
+            frmPonderacionNota temp = new frmPonderacionNota(sCodPaquete, sNombre,/* sSalon, sHorario,*/ sSeccion);
             temp.WindowState = FormWindowState.Normal;
             //temp.MdiParent = this.MdiParent;            
             temp.Show();

@@ -46,12 +46,12 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.Fecha = new System.Windows.Forms.Label();
             this.Descripcion = new System.Windows.Forms.Label();
-<<<<<<< HEAD
+ 
             this.grdTipoNota = new System.Windows.Forms.DataGridView();
-=======
+
             this.grdIngresoNotas = new System.Windows.Forms.DataGridView();
             this.Calificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
->>>>>>> refs/remotes/origin/Kevin
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdIngresoNotas)).BeginInit();
             this.SuspendLayout();
@@ -233,7 +233,7 @@
             // 
             // grdIngresoNotas
             // 
-<<<<<<< HEAD
+ 
             this.grdTipoNota.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdTipoNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdTipoNota.Location = new System.Drawing.Point(12, 138);
@@ -241,7 +241,7 @@
             this.grdTipoNota.Size = new System.Drawing.Size(570, 235);
             this.grdTipoNota.TabIndex = 24;
             // 
-=======
+
             this.grdIngresoNotas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.grdIngresoNotas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.grdIngresoNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -259,7 +259,7 @@
             this.Calificacion.Name = "Calificacion";
             this.Calificacion.Width = 86;
             // 
->>>>>>> refs/remotes/origin/Kevin
+
             // frmIngresoNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,15 +295,15 @@
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label Fecha;
         private System.Windows.Forms.Label Descripcion;
-<<<<<<< HEAD
+ 
         private System.Windows.Forms.DataGridView grdTipoNota;
-=======
+
         private System.Windows.Forms.DataGridView grdIngresoNotas;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnIrPrimero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Calificacion;
->>>>>>> refs/remotes/origin/Kevin
+
     }
 }
