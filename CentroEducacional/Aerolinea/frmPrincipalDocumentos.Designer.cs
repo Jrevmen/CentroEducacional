@@ -1,6 +1,6 @@
 ﻿namespace Aerolinea
 {
-    partial class frmPrincipalReasignacion
+    partial class frmPrincipalDocumentos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalReasignacion));
-            this.grdReasignacion = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalDocumentos));
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -40,22 +39,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdReasignacion)).BeginInit();
+            this.grdDocumentos = new System.Windows.Forms.DataGridView();
             this.grupoFiltrar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDocumentos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdReasignacion
-            // 
-            this.grdReasignacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdReasignacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdReasignacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdReasignacion.Location = new System.Drawing.Point(0, 0);
-            this.grdReasignacion.Name = "grdReasignacion";
-            this.grdReasignacion.ReadOnly = true;
-            this.grdReasignacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdReasignacion.Size = new System.Drawing.Size(998, 472);
-            this.grdReasignacion.TabIndex = 0;
-            this.grdReasignacion.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdReasignacion_CellDoubleClick);
             // 
             // grupoFiltrar
             // 
@@ -72,7 +59,7 @@
             this.grupoFiltrar.Location = new System.Drawing.Point(0, 411);
             this.grupoFiltrar.Name = "grupoFiltrar";
             this.grupoFiltrar.Size = new System.Drawing.Size(998, 61);
-            this.grupoFiltrar.TabIndex = 3;
+            this.grupoFiltrar.TabIndex = 5;
             this.grupoFiltrar.TabStop = false;
             this.grupoFiltrar.Text = "Filtrar";
             // 
@@ -141,11 +128,11 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(665, 16);
+            this.label1.Location = new System.Drawing.Point(679, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 39);
+            this.label1.Size = new System.Drawing.Size(316, 39);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Cobro Reasignación";
+            this.label1.Text = "Cobro Documentos";
             // 
             // txtBuscar
             // 
@@ -163,27 +150,40 @@
             this.lblBuscar.TabIndex = 0;
             this.lblBuscar.Text = "Nombre:";
             // 
-            // frmPrincipalReasignacion
+            // grdDocumentos
+            // 
+            this.grdDocumentos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdDocumentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdDocumentos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdDocumentos.Location = new System.Drawing.Point(0, 0);
+            this.grdDocumentos.Name = "grdDocumentos";
+            this.grdDocumentos.ReadOnly = true;
+            this.grdDocumentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdDocumentos.Size = new System.Drawing.Size(998, 472);
+            this.grdDocumentos.TabIndex = 4;
+            this.grdDocumentos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDocumentos_CellDoubleClick);
+            // 
+            // frmPrincipalDocumentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(998, 472);
             this.Controls.Add(this.grupoFiltrar);
-            this.Controls.Add(this.grdReasignacion);
-            this.Name = "frmPrincipalReasignacion";
+            this.Controls.Add(this.grdDocumentos);
+            this.Name = "frmPrincipalDocumentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPrincipalReasignacion";
-            ((System.ComponentModel.ISupportInitialize)(this.grdReasignacion)).EndInit();
+            this.Text = "frmPrincipalDocumentos";
+            this.Load += new System.EventHandler(this.frmPrincipalDocumentos_Load);
             this.grupoFiltrar.ResumeLayout(false);
             this.grupoFiltrar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdDocumentos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView grdReasignacion;
         private System.Windows.Forms.GroupBox grupoFiltrar;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
@@ -194,5 +194,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.DataGridView grdDocumentos;
     }
 }

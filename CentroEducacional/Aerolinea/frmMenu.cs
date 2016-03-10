@@ -278,5 +278,23 @@ namespace Aerolinea
         {
 
         }
+
+        private void cobroDeDocumentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalDocumentos temp = new frmPrincipalDocumentos();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
+
+        private void pagoEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPrincipalPagos temp = new frmPrincipalPagos();
+            temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            pictureBox1.Visible = false;
+            temp.Show();
+        }
     }
 }

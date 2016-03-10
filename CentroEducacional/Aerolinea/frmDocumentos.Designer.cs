@@ -1,6 +1,6 @@
 ﻿namespace Aerolinea
 {
-    partial class frmReasignacion
+    partial class frmDocumentos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReasignacion));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCarnet = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtCondicion = new System.Windows.Forms.TextBox();
-            this.dtFecha = new System.Windows.Forms.DateTimePicker();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDocumentos));
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.cmbInteligente = new System.Windows.Forms.ComboBox();
+            this.txtContrato = new System.Windows.Forms.TextBox();
+            this.txtTipoServicio = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtTipoPago = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.cmdTp = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnIrUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -50,91 +52,106 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.cmdTp = new System.Windows.Forms.ComboBox();
-            this.txtMonto = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTipoPago = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
-            this.txtTipoServicio = new System.Windows.Forms.TextBox();
-            this.txtContrato = new System.Windows.Forms.TextBox();
-            this.cmbInteligente = new System.Windows.Forms.ComboBox();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
+            this.txtCondicion = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.cmbnombre = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 131);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Carnet";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 91);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.TabIndex = 49;
+            this.label5.Text = "Persona";
             // 
-            // label2
+            // btnFiltrar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 167);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Nombre";
+            this.btnFiltrar.Image = ((System.Drawing.Image)(resources.GetObject("btnFiltrar.Image")));
+            this.btnFiltrar.Location = new System.Drawing.Point(264, 83);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(21, 23);
+            this.btnFiltrar.TabIndex = 48;
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
-            // label3
+            // cmbInteligente
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(238, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Fecha";
+            this.cmbInteligente.FormattingEnabled = true;
+            this.cmbInteligente.Location = new System.Drawing.Point(75, 83);
+            this.cmbInteligente.Name = "cmbInteligente";
+            this.cmbInteligente.Size = new System.Drawing.Size(174, 21);
+            this.cmbInteligente.TabIndex = 47;
+            this.cmbInteligente.SelectedIndexChanged += new System.EventHandler(this.cmbInteligente_SelectedIndexChanged);
             // 
-            // txtCarnet
+            // txtContrato
             // 
-            this.txtCarnet.Location = new System.Drawing.Point(84, 128);
-            this.txtCarnet.Name = "txtCarnet";
-            this.txtCarnet.Size = new System.Drawing.Size(100, 20);
-            this.txtCarnet.TabIndex = 13;
-            this.txtCarnet.Tag = "codigoCarnet";
+            this.txtContrato.Location = new System.Drawing.Point(571, 151);
+            this.txtContrato.Name = "txtContrato";
+            this.txtContrato.Size = new System.Drawing.Size(72, 20);
+            this.txtContrato.TabIndex = 46;
+            this.txtContrato.Visible = false;
             // 
-            // txtNombre
+            // txtTipoServicio
             // 
-            this.txtNombre.Location = new System.Drawing.Point(84, 164);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(174, 20);
-            this.txtNombre.TabIndex = 14;
+            this.txtTipoServicio.Location = new System.Drawing.Point(554, 78);
+            this.txtTipoServicio.Name = "txtTipoServicio";
+            this.txtTipoServicio.Size = new System.Drawing.Size(77, 20);
+            this.txtTipoServicio.TabIndex = 45;
+            this.txtTipoServicio.Tag = "codigo_tipo_servicio";
+            this.txtTipoServicio.Visible = false;
             // 
-            // txtEstado
+            // txtFecha
             // 
-            this.txtEstado.Location = new System.Drawing.Point(460, 83);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(65, 20);
-            this.txtEstado.TabIndex = 15;
-            this.txtEstado.Tag = "estado";
-            this.txtEstado.Text = "ACTIVO";
-            this.txtEstado.Visible = false;
-            this.txtEstado.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtFecha.Location = new System.Drawing.Point(479, 146);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(60, 20);
+            this.txtFecha.TabIndex = 44;
+            this.txtFecha.Tag = "fecha";
+            this.txtFecha.Visible = false;
             // 
-            // txtCondicion
+            // txtTipoPago
             // 
-            this.txtCondicion.Location = new System.Drawing.Point(460, 109);
-            this.txtCondicion.Name = "txtCondicion";
-            this.txtCondicion.Size = new System.Drawing.Size(25, 20);
-            this.txtCondicion.TabIndex = 16;
-            this.txtCondicion.Tag = "condicion";
-            this.txtCondicion.Text = "1";
-            this.txtCondicion.Visible = false;
+            this.txtTipoPago.Location = new System.Drawing.Point(438, 172);
+            this.txtTipoPago.Name = "txtTipoPago";
+            this.txtTipoPago.Size = new System.Drawing.Size(61, 20);
+            this.txtTipoPago.TabIndex = 43;
+            this.txtTipoPago.Tag = "cod_tipo_pago";
+            this.txtTipoPago.Visible = false;
             // 
-            // dtFecha
+            // label4
             // 
-            this.dtFecha.CustomFormat = "yyyy-MM-dd";
-            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFecha.Location = new System.Drawing.Point(281, 124);
-            this.dtFecha.Name = "dtFecha";
-            this.dtFecha.Size = new System.Drawing.Size(90, 20);
-            this.dtFecha.TabIndex = 17;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(266, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Monto";
+            // 
+            // txtMonto
+            // 
+            this.txtMonto.Location = new System.Drawing.Point(307, 164);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(100, 20);
+            this.txtMonto.TabIndex = 41;
+            this.txtMonto.Tag = "monto";
+            // 
+            // cmdTp
+            // 
+            this.cmdTp.FormattingEnabled = true;
+            this.cmdTp.Location = new System.Drawing.Point(571, 104);
+            this.cmdTp.Name = "cmdTp";
+            this.cmdTp.Size = new System.Drawing.Size(60, 21);
+            this.cmdTp.TabIndex = 40;
+            this.cmdTp.Visible = false;
             // 
             // panel1
             // 
@@ -151,10 +168,10 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(3, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(665, 55);
-            this.panel1.TabIndex = 19;
+            this.panel1.TabIndex = 39;
             // 
             // btnIrUltimo
             // 
@@ -164,7 +181,6 @@
             this.btnIrUltimo.Size = new System.Drawing.Size(48, 42);
             this.btnIrUltimo.TabIndex = 16;
             this.btnIrUltimo.UseVisualStyleBackColor = true;
-            this.btnIrUltimo.Click += new System.EventHandler(this.btnIrUltimo_Click);
             // 
             // btnSiguiente
             // 
@@ -174,7 +190,6 @@
             this.btnSiguiente.Size = new System.Drawing.Size(48, 42);
             this.btnSiguiente.TabIndex = 15;
             this.btnSiguiente.UseVisualStyleBackColor = true;
-            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnAnterior
             // 
@@ -184,7 +199,6 @@
             this.btnAnterior.Size = new System.Drawing.Size(48, 42);
             this.btnAnterior.TabIndex = 14;
             this.btnAnterior.UseVisualStyleBackColor = true;
-            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnIrPrimero
             // 
@@ -194,7 +208,6 @@
             this.btnIrPrimero.Size = new System.Drawing.Size(48, 42);
             this.btnIrPrimero.TabIndex = 13;
             this.btnIrPrimero.UseVisualStyleBackColor = true;
-            this.btnIrPrimero.Click += new System.EventHandler(this.btnIrPrimero_Click);
             // 
             // btnBuscar
             // 
@@ -204,7 +217,6 @@
             this.btnBuscar.Size = new System.Drawing.Size(48, 42);
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnImprimir
             // 
@@ -223,7 +235,6 @@
             this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
             this.btnRefrescar.TabIndex = 10;
             this.btnRefrescar.UseVisualStyleBackColor = true;
-            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnCancelar
             // 
@@ -275,108 +286,90 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // cmdTp
+            // dtFecha
             // 
-            this.cmdTp.FormattingEnabled = true;
-            this.cmdTp.Location = new System.Drawing.Point(580, 104);
-            this.cmdTp.Name = "cmdTp";
-            this.cmdTp.Size = new System.Drawing.Size(60, 21);
-            this.cmdTp.TabIndex = 20;
-            this.cmdTp.Visible = false;
+            this.dtFecha.CustomFormat = "yyyy-MM-dd";
+            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFecha.Location = new System.Drawing.Point(272, 124);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(90, 20);
+            this.dtFecha.TabIndex = 38;
             // 
-            // txtMonto
+            // txtCondicion
             // 
-            this.txtMonto.Location = new System.Drawing.Point(316, 164);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(100, 20);
-            this.txtMonto.TabIndex = 21;
-            this.txtMonto.Tag = "monto";
+            this.txtCondicion.Location = new System.Drawing.Point(451, 109);
+            this.txtCondicion.Name = "txtCondicion";
+            this.txtCondicion.Size = new System.Drawing.Size(25, 20);
+            this.txtCondicion.TabIndex = 37;
+            this.txtCondicion.Tag = "condicion";
+            this.txtCondicion.Text = "1";
+            this.txtCondicion.Visible = false;
             // 
-            // label4
+            // txtEstado
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(275, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Monto";
+            this.txtEstado.Location = new System.Drawing.Point(451, 83);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(65, 20);
+            this.txtEstado.TabIndex = 36;
+            this.txtEstado.Tag = "estado";
+            this.txtEstado.Text = "ACTIVO";
+            this.txtEstado.Visible = false;
             // 
-            // txtTipoPago
+            // txtNombre
             // 
-            this.txtTipoPago.Location = new System.Drawing.Point(447, 172);
-            this.txtTipoPago.Name = "txtTipoPago";
-            this.txtTipoPago.Size = new System.Drawing.Size(61, 20);
-            this.txtTipoPago.TabIndex = 23;
-            this.txtTipoPago.Tag = "cod_tipo_pago";
-            this.txtTipoPago.Visible = false;
+            this.txtNombre.Location = new System.Drawing.Point(75, 164);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(174, 20);
+            this.txtNombre.TabIndex = 35;
             // 
-            // txtFecha
+            // txtCarnet
             // 
-            this.txtFecha.Location = new System.Drawing.Point(488, 146);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(60, 20);
-            this.txtFecha.TabIndex = 24;
-            this.txtFecha.Tag = "fecha";
-            this.txtFecha.Visible = false;
+            this.txtCarnet.Location = new System.Drawing.Point(75, 128);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(100, 20);
+            this.txtCarnet.TabIndex = 34;
+            this.txtCarnet.Tag = "codigoCarnet";
             // 
-            // txtTipoServicio
+            // label3
             // 
-            this.txtTipoServicio.Location = new System.Drawing.Point(563, 78);
-            this.txtTipoServicio.Name = "txtTipoServicio";
-            this.txtTipoServicio.Size = new System.Drawing.Size(77, 20);
-            this.txtTipoServicio.TabIndex = 25;
-            this.txtTipoServicio.Tag = "codigo_tipo_servicio";
-            this.txtTipoServicio.Visible = false;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(229, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Fecha";
             // 
-            // txtContrato
+            // label2
             // 
-            this.txtContrato.Location = new System.Drawing.Point(580, 151);
-            this.txtContrato.Name = "txtContrato";
-            this.txtContrato.Size = new System.Drawing.Size(72, 20);
-            this.txtContrato.TabIndex = 26;
-            this.txtContrato.Visible = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Nombre";
             // 
-            // cmbInteligente
+            // label1
             // 
-            this.cmbInteligente.FormattingEnabled = true;
-            this.cmbInteligente.Location = new System.Drawing.Point(84, 83);
-            this.cmbInteligente.Name = "cmbInteligente";
-            this.cmbInteligente.Size = new System.Drawing.Size(174, 21);
-            this.cmbInteligente.TabIndex = 27;
-            this.cmbInteligente.SelectedIndexChanged += new System.EventHandler(this.cmbInteligente_SelectedIndexChanged);
-            // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Image = ((System.Drawing.Image)(resources.GetObject("btnFiltrar.Image")));
-            this.btnFiltrar.Location = new System.Drawing.Point(273, 83);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(21, 23);
-            this.btnFiltrar.TabIndex = 28;
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 91);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Persona";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 131);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Carnet";
             // 
             // cmbnombre
             // 
             this.cmbnombre.FormattingEnabled = true;
-            this.cmbnombre.Location = new System.Drawing.Point(86, 83);
+            this.cmbnombre.Location = new System.Drawing.Point(77, 83);
             this.cmbnombre.Name = "cmbnombre";
             this.cmbnombre.Size = new System.Drawing.Size(121, 21);
-            this.cmbnombre.TabIndex = 30;
+            this.cmbnombre.TabIndex = 50;
             // 
-            // frmReasignacion
+            // frmDocumentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 207);
+            this.ClientSize = new System.Drawing.Size(696, 226);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.cmbInteligente);
@@ -398,12 +391,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbnombre);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(705, 246);
-            this.MinimumSize = new System.Drawing.Size(705, 246);
-            this.Name = "frmReasignacion";
+            this.MaximumSize = new System.Drawing.Size(712, 265);
+            this.MinimumSize = new System.Drawing.Size(712, 265);
+            this.Name = "frmDocumentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmReasignacion";
-            this.Load += new System.EventHandler(this.frmReasignacion_Load);
+            this.Text = "frmDocumentos";
+            this.Load += new System.EventHandler(this.frmDocumentos_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -412,14 +405,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCarnet;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtCondicion;
-        private System.Windows.Forms.DateTimePicker dtFecha;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.ComboBox cmbInteligente;
+        private System.Windows.Forms.TextBox txtContrato;
+        private System.Windows.Forms.TextBox txtTipoServicio;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtTipoPago;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.ComboBox cmdTp;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnIrUltimo;
         private System.Windows.Forms.Button btnSiguiente;
@@ -433,16 +428,14 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.ComboBox cmdTp;
-        private System.Windows.Forms.TextBox txtMonto;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtTipoPago;
-        private System.Windows.Forms.TextBox txtFecha;
-        private System.Windows.Forms.TextBox txtTipoServicio;
-        private System.Windows.Forms.TextBox txtContrato;
-        private System.Windows.Forms.ComboBox cmbInteligente;
-        private System.Windows.Forms.Button btnFiltrar;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dtFecha;
+        private System.Windows.Forms.TextBox txtCondicion;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCarnet;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbnombre;
     }
 }

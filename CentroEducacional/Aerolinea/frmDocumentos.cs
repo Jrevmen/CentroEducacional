@@ -7,18 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Navegador;
 using Filtrado;
+using Navegador;
 
 namespace Aerolinea
 {
-    public partial class frmReasignacion : Form
+    public partial class frmDocumentos : Form
     {
-        string sCodSer,sTrans,estado,sCad,sTran;
-        public frmReasignacion(string sCodServicio,string sTransaccion,string sCarnet,string sNombre,string sMonto,string sFecha)
+        string sCodSer, sTrans, estado, sCad, sTran;
+        
+        public frmDocumentos(string sCodServicio, string sTransaccion, string sCarnet, string sNombre, string sMonto, string sFecha)
         {
             InitializeComponent();
-            
             sCodSer = sCodServicio;
             sTrans = sTransaccion;
             txtCarnet.Text = sCarnet;
@@ -30,25 +30,16 @@ namespace Aerolinea
             btnNuevo.Enabled = PermisoBotones[0];
             btnEditar.Enabled = PermisoBotones[1];
             btnEliminar.Enabled = PermisoBotones[2];
-            //funpersona();
-            
-            
         }
 
-        /*public void funActualizarGrid()
+        void funpersona()
         {
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistros("carnet", "SELECT carnet.codigoCarnet as Carnet, concat(persona.nombre, ' ', persona.apellido) as Nombre from carnet, persona WHERE carnet.codigopersona = persona.codigopersona and persona.condicion = '1'", "consulta", grdInfo);
-            cnegocio.funconsultarRegistrosCombo("cod_tipo_pago", "SELECT cod_tipo_pago as Codigo FROM tipo_pago WHERE descripcion = 'Pago unico' and condicion = '1'", "Codigo", cmdTp);
-
-        }*/
-
-        void funpersona() {
-            clasnegocio cnegocio = new clasnegocio();
             cnegocio.funconsultarRegistrosCombo("carnet", "SELECT concat(TRIM(carnet.codigoCarnet), '.', TRIM(persona.nombre)) as Persona from carnet,persona  WHERE carnet.codigopersona = persona.codigopersona and persona.condicion = '1'", "Persona", cmbInteligente);
-            
+
         }
-        private void frmReasignacion_Load(object sender, EventArgs e)
+
+        private void frmDocumentos_Load(object sender, EventArgs e)
         {
             clasnegocio cneg = new clasnegocio();
             cneg.funactivarDesactivarBoton(btnGuardar, false);
@@ -68,48 +59,32 @@ namespace Aerolinea
             txtNombre.Enabled = false;
             dtFecha.Enabled = false;
             txtMonto.Enabled = false;
-            //funActualizarGrid();
 
         }
 
-        string funCortadorID(string sDato){
+        string funCortadorID(string sDato)
+        {
             sCad = "";
-            try{
-                for (int i = 0; i < sDato.Length; i++){
-                    if (sDato.Substring(i, 1) != "."){
+            try
+            {
+                for (int i = 0; i < sDato.Length; i++)
+                {
+                    if (sDato.Substring(i, 1) != ".")
+                    {
                         sCad = sCad + sDato.Substring(i, 1);
                     }
-                    else{
+                    else
+                    {
                         break;
                     }
                 }
 
             }
-            catch{
+            catch
+            {
                 MessageBox.Show("Error al obtener Codigo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             return sCad;
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnIrPrimero_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnAnterior_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnIrUltimo_Click(object sender, EventArgs e)
-        {
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -132,9 +107,6 @@ namespace Aerolinea
             dtFecha.Enabled = true;
             cmbInteligente.Text = "";
             estado = "";
-
-
-
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -149,7 +121,7 @@ namespace Aerolinea
             txtTipoPago.Text = cmdTp.Text;
             txtFecha.Text = dtFecha.Text;
             txtContrato.Text = null;
-            
+
 
             if (estado.Equals("editar"))
             {
@@ -177,12 +149,7 @@ namespace Aerolinea
             }
 
             this.Close();
-            
-            
-        }
-
-        private void btnRefrescar_Click(object sender, EventArgs e)
-        {
+         
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -210,13 +177,6 @@ namespace Aerolinea
             btnEditar.Enabled = false;
         }
 
-        /*private void grdInfo_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
-            string sCarnet = grdInfo.Rows[grdInfo.CurrentCell.RowIndex].Cells[0].Value.ToString();
-            string sNombre = grdInfo.Rows[grdInfo.CurrentCell.RowIndex].Cells[1].Value.ToString();
-            txtCarnet.Text = sCarnet;
-            txtNombre.Text = sNombre;
-        }
-        */
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             estado = "";
@@ -234,13 +194,7 @@ namespace Aerolinea
             txtMonto.Enabled = false;
             txtCarnet.Enabled = false;
             txtNombre.Enabled = false;
-            dtFecha.Enabled=false;
-            
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            
+            dtFecha.Enabled = false;
         }
 
         private void btnFiltrar_Click(object sender, EventArgs e)
@@ -248,7 +202,7 @@ namespace Aerolinea
             string sCampoCodigo = "codigoCarnet";
             string ScampoDescripcion = "nombre";
             string query = "Select codigoCarnet,nombre from carnet,persona where  carnet.codigopersona = persona.codigopersona and persona.condicion = '1' ";
-            frmFiltrado filtro = new frmFiltrado(query,sCampoCodigo,ScampoDescripcion);
+            frmFiltrado filtro = new frmFiltrado(query, sCampoCodigo, ScampoDescripcion);
             filtro.ShowDialog(this);
             int index = cmbInteligente.FindString(filtro.funResultado());
             cmbInteligente.SelectedIndex = index;
@@ -258,11 +212,11 @@ namespace Aerolinea
         private void cmbInteligente_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtNombre.Text = "";
-            string nombre=funCortadorID(cmbInteligente.Text);
+            string nombre = funCortadorID(cmbInteligente.Text);
             string carnet = funCortadorID(cmbInteligente.Text);
             txtCarnet.Text = carnet;
             clasnegocio cnegocio = new clasnegocio();
-            cnegocio.funconsultarRegistrosCombo("nombre", "SELECT persona.nombre as Nombre from carnet, persona WHERE carnet.codigoCarnet = "+nombre+" and carnet.codigopersona = persona.codigopersona", "nombre", cmbnombre);
+            cnegocio.funconsultarRegistrosCombo("nombre", "SELECT persona.nombre as Nombre from carnet, persona WHERE carnet.codigoCarnet = " + nombre + " and carnet.codigopersona = persona.codigopersona", "nombre", cmbnombre);
             txtNombre.Text = cmbnombre.Text;
         }
     }
